@@ -668,20 +668,20 @@ h3 {
     position: fixed;
     top: 16px;
     left: 16px;
-    z-index: 999;
+    z-index: 9999;
     width: 48px;
     height: 48px;
     border-radius: 12px;
 
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 
-    background: var(--bg-card);
-    border: 1px solid var(--border-frame);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    color: var(--text-primary);
+    background: #1E1E22 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF !important;
 
     transition: all 0.2s ease;
 }
