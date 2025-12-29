@@ -583,9 +583,33 @@ h3 {
         transform: translateX(-100%);
     }
 
+    .sidebar.active,
     .sidebar.open {
         transform: translateX(0);
         box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Keep toggle button visible and larger on mobile */
+    .sidebar-toggle {
+        display: flex !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        width: 48px;
+        height: 48px;
+        background: var(--bg-card) !important;
+        border: 1px solid var(--border-frame) !important;
+        z-index: 200;
+    }
+
+    .sidebar-toggle .material-symbols-rounded {
+        font-size: 28px;
+    }
+
+    /* Don't hide toggle on mobile when sidebar is open */
+    .sidebar-toggle.button-hidden {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: none !important;
     }
 
     .main-content {
