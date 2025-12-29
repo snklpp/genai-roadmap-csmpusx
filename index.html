@@ -1,0 +1,3280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Complete GenAI Roadmap: An Exhaustive Reference Guide covering 8 layers from Research to User, career pathways, project ideas, and learning resources.">
+    <title>The Complete GenAI Roadmap | Exhaustive Reference Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+        <span class="material-symbols-rounded">menu</span>
+    </button>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="material-symbols-rounded logo-icon">psychology</span>
+                <span class="logo-text">GenAI Roadmap</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"
+                style="background:none; border:none; cursor:pointer; color:inherit; margin-left: auto; padding: 8px;">
+                <span class="material-symbols-rounded theme-icon">light_mode</span>
+            </button>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#introduction" class="nav-link">1. Introduction & Overview</a></li>
+            <li><a href="#eight-layers" class="nav-link">2. The Eight Layers</a>
+                <ul class="nav-sublist">
+                    <li><a href="#layer-1">Layer 1: Research <span class="material-symbols-rounded"
+                                style="font-size: 16px;">science</span></a></li>
+                    <li><a href="#layer-2">Layer 2: Foundation <span class="material-symbols-rounded"
+                                style="font-size: 16px;">factory</span></a></li>
+                    <li><a href="#layer-3">Layer 3: Platform <span class="material-symbols-rounded"
+                                style="font-size: 16px;">hub</span></a></li>
+                    <li><a href="#layer-4">Layer 4: Builder <span class="material-symbols-rounded"
+                                style="font-size: 16px;">construction</span></a></li>
+                    <li><a href="#layer-5">Layer 5: Application <span class="material-symbols-rounded"
+                                style="font-size: 16px;">computer</span></a></li>
+                    <li><a href="#layer-6">Layer 6: Operation <span class="material-symbols-rounded"
+                                style="font-size: 16px;">settings</span></a></li>
+                    <li><a href="#layer-7">Layer 7: Distribution <span class="material-symbols-rounded"
+                                style="font-size: 16px;">store</span></a></li>
+                    <li><a href="#layer-8">Layer 8: User <span class="material-symbols-rounded"
+                                style="font-size: 16px;">person</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#feedback-loop" class="nav-link">3. The Feedback Loop <span class="material-symbols-rounded"
+                        style="font-size: 18px;">sync</span></a></li>
+            <li><a href="#dimensions" class="nav-link">4. Cross-Cutting Dimensions</a></li>
+            <li><a href="#careers" class="nav-link">5. Career Pathways</a></li>
+            <li><a href="#projects" class="nav-link">6. Project Ideas</a></li>
+            <li><a href="#research" class="nav-link">7. Research Opportunities</a></li>
+            <li><a href="#resources" class="nav-link">8. Learning Resources</a></li>
+            <li><a href="#tools" class="nav-link">9. Tools Directory</a></li>
+            <li><a href="#applications" class="nav-link">10. Industry Applications</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <span class="mobile-title">GenAI Roadmap</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+
+        <!-- Page Title -->
+        <header class="page-title-header">
+            <h1 class="page-title">
+                <span class="material-symbols-rounded logo-icon">psychology</span>
+                GenAI Roadmap
+            </h1>
+        </header>
+
+        <!-- Table of Contents -->
+        <section class="toc-section" id="toc">
+            <h2 class="section-title"><span class="material-symbols-rounded">list_alt</span> Table of Contents</h2>
+            <div class="toc-grid">
+                <a href="#introduction" class="toc-card">
+                    <span class="toc-number">01</span>
+                    <span class="toc-name">Introduction & Framework Overview</span>
+                </a>
+                <a href="#eight-layers" class="toc-card">
+                    <span class="toc-number">02</span>
+                    <span class="toc-name">The Eight Layers - Deep Dive</span>
+                </a>
+                <a href="#feedback-loop" class="toc-card">
+                    <span class="toc-number">03</span>
+                    <span class="toc-name">The Feedback Loop</span>
+                </a>
+                <a href="#dimensions" class="toc-card">
+                    <span class="toc-number">04</span>
+                    <span class="toc-name">Cross-Cutting Dimensions</span>
+                </a>
+                <a href="#careers" class="toc-card">
+                    <span class="toc-number">05</span>
+                    <span class="toc-name">Career Pathways & Job Roles</span>
+                </a>
+                <a href="#projects" class="toc-card">
+                    <span class="toc-number">06</span>
+                    <span class="toc-name">Project Ideas by Layer</span>
+                </a>
+                <a href="#research" class="toc-card">
+                    <span class="toc-number">07</span>
+                    <span class="toc-name">Research Opportunities</span>
+                </a>
+                <a href="#resources" class="toc-card">
+                    <span class="toc-number">08</span>
+                    <span class="toc-name">Learning Resources & Curriculum</span>
+                </a>
+                <a href="#tools" class="toc-card">
+                    <span class="toc-number">09</span>
+                    <span class="toc-name">Tools & Frameworks Directory</span>
+                </a>
+                <a href="#applications" class="toc-card">
+                    <span class="toc-number">10</span>
+                    <span class="toc-name">Industry Applications & Case Studies</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="content-section" id="introduction">
+            <div class="section-header">
+                <h2 class="section-title">1. Introduction & Framework Overview</h2>
+            </div>
+
+            <div class="content-block">
+                <h3>The Problem This Framework Solves</h3>
+                <p>The Generative AI landscape has exploded with terminology: LLMs, RAG, Vector Databases, Prompt
+                    Engineering, Fine-tuning, Agents, RLHF, Transformers, and hundreds more. Without structure, these
+                    concepts create confusion rather than clarity.</p>
+            </div>
+
+            <div class="content-block highlight-box">
+                <h3>The Solution: An 8-Layer Mental Model</h3>
+                <p class="principle"><strong>Core Principle:</strong> Every GenAI concept, tool, company, or role can be
+                    mapped to exactly one of eight hierarchical layers, representing the complete lifecycle from
+                    theoretical research to end-user value.</p>
+
+                <h4>Framework Components:</h4>
+                <ul class="styled-list">
+                    <li><strong>8 Horizontal Layers:</strong> The vertical stack from research to user</li>
+                    <li><strong>4 Vertical Dimensions:</strong> Infrastructure, Data, Tools, and People that cut across
+                        all layers</li>
+                    <li><strong>1 Circular Feedback Loop:</strong> Innovation flowing from users back to research</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Why This Matters</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <span class="material-symbols-rounded benefit-icon">school</span>
+                        <h4>For Learners</h4>
+                        <p>Build coherent learning paths instead of random tutorial hopping</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="material-symbols-rounded benefit-icon">work</span>
+                        <h4>For Job Seekers</h4>
+                        <p>Identify precise entry points matching your skills</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="material-symbols-rounded benefit-icon">construction</span>
+                        <h4>For Builders</h4>
+                        <p>Understand the full stack needed to ship AI products</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="material-symbols-rounded benefit-icon">science</span>
+                        <h4>For Researchers</h4>
+                        <p>See how theoretical work flows into practical impact</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="material-symbols-rounded benefit-icon">paid</span>
+                        <h4>For Investors</h4>
+                        <p>Evaluate where companies sit in the value chain</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Eight Layers -->
+        <section class="content-section" id="eight-layers">
+            <div class="section-header">
+                <h2 class="section-title">2. The Eight Layers - Deep Dive</h2>
+            </div>
+
+            <!-- Layer 1: Research -->
+            <article class="layer-section" id="layer-1">
+                <div class="layer-header layer-1-bg">
+                    <span class="material-symbols-rounded layer-icon">science</span>
+                    <div class="layer-info">
+                        <h3>Layer 1: Research Layer</h3>
+                        <p class="layer-tagline">"The Birthplace of AI Innovation"</p>
+                    </div>
+                </div>
+
+                <div class="layer-content">
+                    <div class="definition-box">
+                        <h4>Definition</h4>
+                        <p>The foundational layer where theoretical breakthroughs, novel algorithms, and experimental
+                            architectures are born. This is pre-production, pre-scale science.</p>
+                    </div>
+
+                    <!-- 1.1 Novel Model Architectures -->
+                    <div class="subsection">
+                        <h4>1.1 Novel Model Architectures</h4>
+                        <p><strong>What:</strong> Inventing fundamentally new ways to structure neural networks.</p>
+
+                        <h5>Evolution Timeline:</h5>
+                        <ul class="styled-list">
+                            <li>RNNs (1997) → LSTMs (1997) → GRUs (2014)</li>
+                            <li>Transformers (2017) → GPT series, BERT</li>
+                            <li>Vision Transformers (ViT, 2020)</li>
+                            <li>State Space Models (S4, 2021 → Mamba, 2023)</li>
+                            <li>Mixture of Experts (MoE) resurgence (2022+)</li>
+                            <li>Retrieval-Grounded Architectures (2024+)</li>
+                        </ul>
+
+                        <h5>Current Research Frontiers:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Linear Attention Mechanisms:</strong> Reducing O(n²) complexity to O(n)</li>
+                            <li><strong>Hybrid Architectures:</strong> Combining Transformers with SSMs (e.g., Jamba)
+                            </li>
+                            <li><strong>Sparse Architectures:</strong> Conditional computation for efficiency</li>
+                            <li><strong>Recursive Models:</strong> Neural networks that can loop and self-reference</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li>
+                                <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener">"Attention Is
+                                    All You Need" (Vaswani et al., 2017)</a>
+                            </li>
+                            <li>
+                                <a href="https://arxiv.org/abs/2312.00752" target="_blank" rel="noopener">"Mamba:
+                                    Linear-Time Sequence Modeling" (Gu & Dao, 2023)</a>
+                            </li>
+                            <li>
+                                <a href="https://arxiv.org/abs/2401.04088" target="_blank" rel="noopener">"Mixtral of
+                                    Experts" (Jiang et al., 2024)</a>
+                            </li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><strong>Course:</strong> Stanford CS224N - Natural Language Processing with Deep
+                                Learning</li>
+                            <li><a href="https://nlp.seas.harvard.edu/annotated-transformer/" target="_blank"
+                                    rel="noopener">The Annotated Transformer</a></li>
+                            <li><a href="https://paperswithcode.com/methods/category/transformers" target="_blank"
+                                    rel="noopener">Papers with Code - Transformers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 1.2 Optimization & Training Techniques -->
+                    <div class="subsection">
+                        <h4>1.2 Optimization & Training Techniques</h4>
+                        <p><strong>What:</strong> Making training faster, cheaper, and more stable.</p>
+
+                        <h5>Memory Optimization:</h5>
+                        <ul class="styled-list">
+                            <li>Flash Attention (reduces memory from O(n²) to O(n))</li>
+                            <li>Flash Attention 2 (2023) - 2x faster</li>
+                            <li>Mixed Precision Training (FP16, BF16)</li>
+                            <li>Gradient Checkpointing</li>
+                        </ul>
+
+                        <h5>Parallelization Strategies:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Data Parallelism:</strong> Split batches across GPUs</li>
+                            <li><strong>Model Parallelism:</strong> Split model layers across GPUs</li>
+                            <li><strong>Pipeline Parallelism:</strong> Stage-wise model distribution</li>
+                            <li><strong>Tensor Parallelism:</strong> Split individual layers</li>
+                            <li><strong>3D Parallelism:</strong> Combining all three</li>
+                        </ul>
+
+                        <h5>Advanced Optimizers:</h5>
+                        <ul class="styled-list">
+                            <li>AdamW (Adam with weight decay)</li>
+                            <li>LAMB (Layer-wise Adaptive Moments for Batch training)</li>
+                            <li>Lion (Evolved optimizer from Google)</li>
+                            <li>Sophia (Second-order optimizer, 2023)</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2205.14135" target="_blank" rel="noopener">"Flash
+                                    Attention: Fast and Memory-Efficient Exact Attention"</a></li>
+                            <li><a href="https://arxiv.org/abs/1710.03740" target="_blank" rel="noopener">"Mixed
+                                    Precision Training"</a></li>
+                            <li><a href="https://arxiv.org/abs/1910.02054" target="_blank" rel="noopener">"ZeRO: Memory
+                                    Optimizations Toward Training Trillion Parameter Models"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://www.deepspeed.ai/" target="_blank" rel="noopener">DeepSpeed
+                                    Documentation</a></li>
+                            <li><a href="https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html" target="_blank"
+                                    rel="noopener">PyTorch FSDP Tutorial</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 1.3 Alignment Research -->
+                    <div class="subsection">
+                        <h4>1.3 Alignment Research</h4>
+                        <p><strong>What:</strong> Ensuring AI systems behave according to human values and intentions.
+                        </p>
+
+                        <h5>Major Approaches:</h5>
+
+                        <div class="info-card">
+                            <h6>Reinforcement Learning from Human Feedback (RLHF)</h6>
+                            <ul class="styled-list">
+                                <li>Human raters rank model outputs</li>
+                                <li>Train reward model to predict human preferences</li>
+                                <li>Use PPO to fine-tune LLM against reward model</li>
+                                <li>Pioneered by OpenAI for InstructGPT/ChatGPT</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Direct Preference Optimization (DPO)</h6>
+                            <ul class="styled-list">
+                                <li>Simpler alternative to RLHF</li>
+                                <li>Directly optimizes LLM without separate reward model</li>
+                                <li>More stable training, fewer hyperparameters</li>
+                                <li>Published 2023, rapidly adopted</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Constitutional AI</h6>
+                            <ul class="styled-list">
+                                <li>Models critique and revise their own outputs</li>
+                                <li>Based on written principles (constitution)</li>
+                                <li>Reduces need for human feedback volume</li>
+                                <li>Developed by Anthropic</li>
+                            </ul>
+                        </div>
+
+                        <h5>Other Techniques:</h5>
+                        <ul class="styled-list">
+                            <li>RLAIF (RL from AI Feedback)</li>
+                            <li>Debate and Amplification</li>
+                            <li>Process Supervision (rewarding reasoning steps)</li>
+                            <li>Red Teaming and Adversarial Testing</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2203.02155" target="_blank" rel="noopener">"Training
+                                    Language Models to Follow Instructions with Human Feedback"</a></li>
+                            <li><a href="https://arxiv.org/abs/2305.18290" target="_blank" rel="noopener">"Direct
+                                    Preference Optimization"</a></li>
+                            <li><a href="https://arxiv.org/abs/2212.08073" target="_blank"
+                                    rel="noopener">"Constitutional AI"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://www.alignmentforum.org/" target="_blank" rel="noopener">Alignment
+                                    Forum</a></li>
+                            <li><a href="https://github.com/huggingface/trl" target="_blank" rel="noopener">TRL
+                                    (Transformer Reinforcement Learning)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 1.4 Multimodality -->
+                    <div class="subsection">
+                        <h4>1.4 Multimodality</h4>
+                        <p><strong>What:</strong> Enabling models to understand and generate across text, images, audio,
+                            video, and more.</p>
+
+                        <h5>Architecture Patterns:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Early Fusion:</strong> Combine modalities at input (e.g., CLIP)</li>
+                            <li><strong>Late Fusion:</strong> Process separately, combine outputs</li>
+                            <li><strong>Cross-Attention:</strong> Let modalities attend to each other</li>
+                            <li><strong>Unified Tokenization:</strong> Treat all modalities as token sequences</li>
+                        </ul>
+
+                        <h5>Major Multimodal Models:</h5>
+                        <ul class="styled-list">
+                            <li>CLIP (Contrastive Language-Image Pre-training, OpenAI)</li>
+                            <li>Flamingo (DeepMind, 2022)</li>
+                            <li>GPT-4V (Vision, 2023)</li>
+                            <li>Gemini (Google, native multimodal, 2023)</li>
+                            <li>LLaVA (Open-source vision-language model)</li>
+                        </ul>
+
+                        <h5>Research Directions:</h5>
+                        <ul class="styled-list">
+                            <li>Any-to-any generation (text→image, image→video, audio→text)</li>
+                            <li>Video understanding (long-context temporal reasoning)</li>
+                            <li>3D scene understanding</li>
+                            <li>Robotic embodiment (vision + action)</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2103.00020" target="_blank" rel="noopener">"Learning
+                                    Transferable Visual Models From Natural Language Supervision" (CLIP)</a></li>
+                            <li><a href="https://arxiv.org/abs/2204.14198" target="_blank" rel="noopener">"Flamingo: a
+                                    Visual Language Model for Few-Shot Learning"</a></li>
+                            <li><a href="https://arxiv.org/abs/2304.08485" target="_blank" rel="noopener">"LLaVA: Visual
+                                    Instruction Tuning"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://huggingface.co/blog/vision_language_pretraining" target="_blank"
+                                    rel="noopener">Hugging Face Multimodal</a></li>
+                            <li><a href="https://github.com/haotian-liu/LLaVA" target="_blank" rel="noopener">LLaVA
+                                    GitHub</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 1.5 Interpretability -->
+                    <div class="subsection">
+                        <h4>1.5 Interpretability & Mechanistic Understanding</h4>
+                        <p><strong>What:</strong> Opening the "black box" to understand how models actually work
+                            internally.</p>
+
+                        <h5>Key Approaches:</h5>
+
+                        <div class="info-card">
+                            <h6>Mechanistic Interpretability</h6>
+                            <ul class="styled-list">
+                                <li>Reverse engineering specific circuits in neural networks</li>
+                                <li>Understanding induction heads, attention patterns</li>
+                                <li>Identifying "features" and "neurons" that detect concepts</li>
+                                <li>Pioneered by Anthropic, Chris Olah, Neel Nanda</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Probing & Visualization</h6>
+                            <ul class="styled-list">
+                                <li>Linear probes to detect what networks know</li>
+                                <li>Attention visualization</li>
+                                <li>Activation atlases</li>
+                                <li>Neuron activation analysis</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Causal Interventions</h6>
+                            <ul class="styled-list">
+                                <li>Activation patching to test hypotheses</li>
+                                <li>Causal tracing of information flow</li>
+                                <li>Path patching and ablation studies</li>
+                            </ul>
+                        </div>
+
+                        <h5>Applications:</h5>
+                        <ul class="styled-list">
+                            <li>Detecting deception and backdoors</li>
+                            <li>Improving model reliability</li>
+                            <li>Guiding architecture design</li>
+                            <li>Ensuring safety properties</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://transformer-circuits.pub/" target="_blank" rel="noopener">"A
+                                    Mathematical Framework for Transformer Circuits"</a></li>
+                            <li><a href="https://transformer-circuits.pub/2024/scaling-monosemanticity/" target="_blank"
+                                    rel="noopener">"Scaling Monosemanticity" (Anthropic, 2024)</a></li>
+                            <li><a href="https://arxiv.org/abs/1610.01644" target="_blank" rel="noopener">"Probing
+                                    Classifiers"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://www.anthropic.com/research" target="_blank" rel="noopener">Anthropic
+                                    Interpretability Research</a></li>
+                            <li><a href="https://github.com/neelnanda-io/TransformerLens" target="_blank"
+                                    rel="noopener">TransformerLens (Neel Nanda)</a></li>
+                            <li><a href="https://neuroscope.io/" target="_blank" rel="noopener">Neuroscope</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 1.6 Emergent Capabilities -->
+                    <div class="subsection">
+                        <h4>1.6 Emergent Capabilities & Scaling Laws</h4>
+                        <p><strong>What:</strong> Studying how new abilities appear at scale and predicting performance.
+                        </p>
+
+                        <h5>Emergent Phenomena:</h5>
+                        <ul class="styled-list">
+                            <li>Arithmetic ability (appears around 10B parameters)</li>
+                            <li>In-context learning (few-shot learning without gradient updates)</li>
+                            <li>Chain-of-thought reasoning</li>
+                            <li>Instruction following</li>
+                            <li>Theory of mind</li>
+                        </ul>
+
+                        <h5>Scaling Laws:</h5>
+                        <ul class="styled-list">
+                            <li>Chinchilla scaling laws (optimal compute allocation)</li>
+                            <li>Power law relationship: Loss ∝ 1/(Compute^α)</li>
+                            <li>Predict performance before training</li>
+                            <li>Determine optimal model size vs. data size</li>
+                        </ul>
+
+                        <h5>Grokking:</h5>
+                        <ul class="styled-list">
+                            <li>Sudden generalization after prolonged training</li>
+                            <li>Models memorize, then suddenly understand</li>
+                            <li>Important for understanding learning dynamics</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2001.08361" target="_blank" rel="noopener">"Scaling Laws
+                                    for Neural Language Models" (Kaplan et al., 2020)</a></li>
+                            <li><a href="https://arxiv.org/abs/2203.15556" target="_blank" rel="noopener">"Training
+                                    Compute-Optimal Large Language Models" (Chinchilla)</a></li>
+                            <li><a href="https://arxiv.org/abs/2206.07682" target="_blank" rel="noopener">"Emergent
+                                    Abilities of Large Language Models"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://github.com/Kipok/scaling-laws-calculator" target="_blank"
+                                    rel="noopener">Scaling Laws Calculator</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Layer 1 Outputs and Who Works Here -->
+                    <div class="layer-summary">
+                        <div class="summary-box">
+                            <h4>Research Layer: Typical Outputs</h4>
+                            <ul class="check-list">
+                                <li>Research Papers (arXiv, NeurIPS, ICML, ICLR)</li>
+                                <li>Benchmark Datasets (GLUE, SuperGLUE, BIG-bench)</li>
+                                <li>Proof-of-Concept Implementations</li>
+                                <li>Theoretical Frameworks</li>
+                            </ul>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Who Works Here?</h4>
+                            <ul class="people-list">
+                                <li>PhD Researchers</li>
+                                <li>Research Scientists</li>
+                                <li>Mathematicians & Theoretical Computer Scientists</li>
+                                <li>Research Engineers (implementing novel ideas)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Layer 2: Foundation -->
+            <article class="layer-section" id="layer-2">
+                <div class="layer-header layer-2-bg">
+                    <span class="material-symbols-rounded layer-icon">factory</span>
+                    <div class="layer-info">
+                        <h3>Layer 2: Foundation Layer</h3>
+                        <p class="layer-tagline">"The Factory/Manufacturing Unit"</p>
+                    </div>
+                </div>
+
+                <div class="layer-content">
+                    <div class="definition-box">
+                        <h4>Definition</h4>
+                        <p>Converting research breakthroughs into massive, pre-trained foundation models through
+                            industrial-scale computation and data processing.</p>
+                    </div>
+
+                    <!-- 2.1 Data Preparation -->
+                    <div class="subsection">
+                        <h4>2.1 Data Preparation & Curation</h4>
+                        <p><strong>What:</strong> Assembling and cleaning trillion-token datasets for pre-training.</p>
+
+                        <h5>Data Sources - Text Data:</h5>
+                        <ul class="styled-list">
+                            <li>Common Crawl (petabytes of web data)</li>
+                            <li>Books (Books3, Bibliotik)</li>
+                            <li>GitHub (code repositories)</li>
+                            <li>Wikipedia & WikiBooks</li>
+                            <li>Academic papers (arXiv, PubMed)</li>
+                            <li>News archives</li>
+                            <li>Social media (Reddit, StackOverflow)</li>
+                        </ul>
+
+                        <h5>Quality Filtering:</h5>
+                        <ul class="styled-list">
+                            <li>Deduplication (exact and fuzzy)</li>
+                            <li>Language identification</li>
+                            <li>Toxicity filtering</li>
+                            <li>Hate speech removal</li>
+                            <li>PII (Personally Identifiable Information) redaction</li>
+                            <li>Perplexity filtering (remove gibberish)</li>
+                            <li>Quality scoring based on reference datasets</li>
+                        </ul>
+
+                        <h5>Data Mixing:</h5>
+                        <ul class="styled-list">
+                            <li>Optimal ratios of different data types</li>
+                            <li>Upweighting/downweighting domains</li>
+                            <li>Curriculum learning (easy→hard data)</li>
+                        </ul>
+
+                        <h5>Tokenization:</h5>
+                        <ul class="styled-list">
+                            <li>Byte-Pair Encoding (BPE)</li>
+                            <li>WordPiece</li>
+                            <li>SentencePiece</li>
+                            <li>Unigram tokenization</li>
+                            <li>Choosing vocabulary size (32K, 50K, 100K tokens)</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2101.00027" target="_blank" rel="noopener">"The Pile: An
+                                    800GB Dataset of Diverse Text"</a></li>
+                            <li><a href="https://arxiv.org/abs/2103.12028" target="_blank" rel="noopener">"Quality at a
+                                    Glance: An Audit of Web-Crawled Multilingual Datasets"</a></li>
+                            <li><a href="https://arxiv.org/abs/2107.06499" target="_blank" rel="noopener">"Deduplicating
+                                    Training Data Makes Language Models Better"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://commoncrawl.org/" target="_blank" rel="noopener">Common Crawl</a></li>
+                            <li><a href="https://pile.eleuther.ai/" target="_blank" rel="noopener">The Pile</a></li>
+                            <li><a href="https://github.com/allenai/dolma" target="_blank" rel="noopener">Dolma (Allen
+                                    AI open dataset)</a></li>
+                            <li><a href="https://github.com/togethercomputer/RedPajama-Data" target="_blank"
+                                    rel="noopener">RedPajama</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.2 Model Implementation -->
+                    <div class="subsection">
+                        <h4>2.2 Model Implementation & Architecture</h4>
+                        <p><strong>What:</strong> Translating research architectures into production-ready code.</p>
+
+                        <h5>Model Topology:</h5>
+                        <ul class="styled-list">
+                            <li>Number of layers (12, 24, 32, 80, 120+)</li>
+                            <li>Hidden dimensions (768, 1024, 2048, 4096, 8192)</li>
+                            <li>Attention heads (8, 12, 16, 32, 64)</li>
+                            <li>MLP expansion ratio (4x hidden dimension is standard)</li>
+                            <li>Vocabulary size</li>
+                        </ul>
+
+                        <h5>Architectural Choices:</h5>
+                        <ul class="styled-list">
+                            <li>Pre-LayerNorm vs. Post-LayerNorm</li>
+                            <li>RMSNorm vs. LayerNorm (RMS is faster)</li>
+                            <li>Absolute vs. Relative positional encoding</li>
+                            <li>RoPE (Rotary Position Embeddings) - now standard</li>
+                            <li>ALiBi (Attention with Linear Biases)</li>
+                            <li>GQA (Grouped Query Attention) for efficiency</li>
+                            <li>SwiGLU activation (better than ReLU/GELU)</li>
+                        </ul>
+
+                        <h5>Initialization Strategies:</h5>
+                        <ul class="styled-list">
+                            <li>Xavier/Glorot initialization</li>
+                            <li>Kaiming/He initialization</li>
+                            <li>GPT-style scaled initialization</li>
+                            <li>Proper scaling for deep networks</li>
+                        </ul>
+
+                        <h5>Frameworks:</h5>
+                        <ul class="styled-list">
+                            <li>PyTorch (most research)</li>
+                            <li>JAX (Google, functional programming)</li>
+                            <li>TensorFlow (declining but still used)</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2002.04745" target="_blank" rel="noopener">"On Layer
+                                    Normalization in the Transformer Architecture"</a></li>
+                            <li><a href="https://arxiv.org/abs/2104.09864" target="_blank" rel="noopener">"RoFormer:
+                                    Enhanced Transformer with Rotary Position Embedding"</a></li>
+                            <li><a href="https://arxiv.org/abs/2305.13245" target="_blank" rel="noopener">"GQA: Training
+                                    Generalized Multi-Query Transformer"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://github.com/karpathy/nanoGPT" target="_blank" rel="noopener">NanoGPT
+                                    (minimal GPT implementation)</a></li>
+                            <li><a href="https://github.com/karpathy/minGPT" target="_blank" rel="noopener">MinGPT</a>
+                            </li>
+                            <li><a href="https://github.com/karpathy/llm.c" target="_blank" rel="noopener">LLM.c
+                                    (training in pure C)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.3 Distributed Training -->
+                    <div class="subsection">
+                        <h4>2.3 Distributed Training</h4>
+                        <p><strong>What:</strong> Training across hundreds or thousands of GPUs simultaneously.</p>
+
+                        <h5>Hardware Considerations - GPU Types:</h5>
+                        <ul class="styled-list">
+                            <li>NVIDIA A100 (80GB)</li>
+                            <li>NVIDIA H100 (80GB, 3x faster than A100)</li>
+                            <li>NVIDIA H200 (141GB, even more memory)</li>
+                            <li>AMD MI250X, MI300 (alternatives)</li>
+                            <li>Google TPUs (v4, v5)</li>
+                        </ul>
+
+                        <h5>Interconnects:</h5>
+                        <ul class="styled-list">
+                            <li>NVLink (GPU-to-GPU, 900 GB/s)</li>
+                            <li>InfiniBand (cluster networking, 400 Gbps)</li>
+                            <li>Ethernet (slower but cheaper)</li>
+                        </ul>
+
+                        <h5>Storage:</h5>
+                        <ul class="styled-list">
+                            <li>Distributed file systems (Lustre, GPFS)</li>
+                            <li>Object storage (S3, GCS)</li>
+                            <li>High-bandwidth local NVMe</li>
+                        </ul>
+
+                        <h5>Parallelization Libraries:</h5>
+                        <div class="info-card">
+                            <h6>DeepSpeed (Microsoft)</h6>
+                            <ul class="styled-list">
+                                <li>ZeRO optimizer (split optimizer states, gradients, parameters)</li>
+                                <li>3D parallelism support</li>
+                                <li>Inference optimization</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Megatron-LM (NVIDIA)</h6>
+                            <ul class="styled-list">
+                                <li>Tensor parallelism</li>
+                                <li>Pipeline parallelism</li>
+                                <li>GPT, BERT implementations</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>PyTorch FSDP (Fully Sharded Data Parallel)</h6>
+                            <ul class="styled-list">
+                                <li>Native PyTorch solution</li>
+                                <li>Automatic sharding</li>
+                                <li>Good for researchers</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Composer (MosaicML)</h6>
+                            <ul class="styled-list">
+                                <li>Efficiency algorithms</li>
+                                <li>Streaming datasets</li>
+                                <li>Training recipes</li>
+                            </ul>
+                        </div>
+
+                        <h5>Other Tools:</h5>
+                        <ul class="styled-list">
+                            <li>Alpa (automatic parallelization)</li>
+                            <li>Colossal-AI (large-scale training)</li>
+                            <li>FairScale (Facebook)</li>
+                        </ul>
+
+                        <h5>Checkpoint Management:</h5>
+                        <ul class="styled-list">
+                            <li>Saving model snapshots every N steps</li>
+                            <li>Checkpoint sharding across nodes</li>
+                            <li>Asynchronous checkpointing</li>
+                            <li>Resuming from failures</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/1909.08053" target="_blank" rel="noopener">"Megatron-LM:
+                                    Training Multi-Billion Parameter Language Models"</a></li>
+                            <li><a href="https://arxiv.org/abs/1910.02054" target="_blank" rel="noopener">"ZeRO: Memory
+                                    Optimizations Toward Training Trillion Parameter Models"</a></li>
+                            <li><a href="https://arxiv.org/abs/2104.04473" target="_blank" rel="noopener">"Efficient
+                                    Large-Scale Language Model Training on GPU Clusters Using Megatron-LM"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://www.deepspeed.ai/" target="_blank" rel="noopener">DeepSpeed</a></li>
+                            <li><a href="https://github.com/NVIDIA/Megatron-LM" target="_blank"
+                                    rel="noopener">Megatron-LM</a></li>
+                            <li><a href="https://pytorch.org/docs/stable/fsdp.html" target="_blank"
+                                    rel="noopener">PyTorch FSDP</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.4 Evaluation & Benchmarking -->
+                    <div class="subsection">
+                        <h4>2.4 Evaluation & Benchmarking</h4>
+                        <p><strong>What:</strong> Measuring model capabilities across diverse tasks.</p>
+
+                        <h5>Benchmark Categories:</h5>
+
+                        <div class="info-card">
+                            <h6>Language Understanding</h6>
+                            <ul class="styled-list">
+                                <li>GLUE (General Language Understanding Evaluation)</li>
+                                <li>SuperGLUE (harder version)</li>
+                                <li>MMLU (Massive Multitask Language Understanding, 57 subjects)</li>
+                                <li>HellaSwag (commonsense reasoning)</li>
+                                <li>WinoGrande (coreference resolution)</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Reasoning</h6>
+                            <ul class="styled-list">
+                                <li>GSM8K (grade school math, 8K problems)</li>
+                                <li>MATH (competition mathematics)</li>
+                                <li>ARC (science questions)</li>
+                                <li>CommonsenseQA</li>
+                                <li>BIG-bench (200+ diverse tasks)</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Coding</h6>
+                            <ul class="styled-list">
+                                <li>HumanEval (Python function completion)</li>
+                                <li>MBPP (Mostly Basic Python Problems)</li>
+                                <li>APPS (coding challenges)</li>
+                                <li>CodeContests (competitive programming)</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Factual Knowledge</h6>
+                            <ul class="styled-list">
+                                <li>TriviaQA</li>
+                                <li>Natural Questions</li>
+                                <li>TruthfulQA (measures truthfulness)</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Safety & Bias</h6>
+                            <ul class="styled-list">
+                                <li>BOLD (Bias in Open-ended Language Generation)</li>
+                                <li>RealToxicityPrompts</li>
+                                <li>CrowS-Pairs (stereotypes)</li>
+                            </ul>
+                        </div>
+
+                        <h5>Evaluation Frameworks:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://github.com/EleutherAI/lm-evaluation-harness" target="_blank"
+                                    rel="noopener">EleutherAI LM Evaluation Harness</a></li>
+                            <li><a href="https://github.com/openai/evals" target="_blank" rel="noopener">OpenAI
+                                    Evals</a></li>
+                            <li><a href="https://crfm.stanford.edu/helm/" target="_blank" rel="noopener">HELM (Holistic
+                                    Evaluation of Language Models)</a></li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/1804.07461" target="_blank" rel="noopener">"GLUE: A
+                                    Multi-Task Benchmark and Analysis Platform"</a></li>
+                            <li><a href="https://arxiv.org/abs/2009.03300" target="_blank" rel="noopener">"Measuring
+                                    Massive Multitask Language Understanding" (MMLU)</a></li>
+                            <li><a href="https://arxiv.org/abs/2206.04615" target="_blank" rel="noopener">"Beyond the
+                                    Imitation Game" (BIG-bench)</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://paperswithcode.com/" target="_blank" rel="noopener">Papers with Code
+                                    Benchmarks</a></li>
+                            <li><a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard"
+                                    target="_blank" rel="noopener">Hugging Face Open LLM Leaderboard</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.5 Instruction Tuning -->
+                    <div class="subsection">
+                        <h4>2.5 Instruction Tuning & Alignment</h4>
+                        <p><strong>What:</strong> Converting base models into helpful assistants.</p>
+
+                        <h5>Instruction Datasets:</h5>
+                        <ul class="styled-list">
+                            <li>FLAN (Fine-tuned LAnguage Net)</li>
+                            <li>Alpaca (52K instructions from GPT-3.5)</li>
+                            <li>Dolly (Databricks, human-generated)</li>
+                            <li>ShareGPT (conversations from ChatGPT users)</li>
+                            <li>OpenAssistant Conversations</li>
+                            <li>Anthropic HH-RLHF</li>
+                        </ul>
+
+                        <h5>Supervised Fine-Tuning (SFT):</h5>
+                        <ul class="styled-list">
+                            <li>Train on (instruction, response) pairs</li>
+                            <li>Typically 10K-100K examples</li>
+                            <li>Much smaller than pre-training</li>
+                            <li>Teaches model to follow formats</li>
+                        </ul>
+
+                        <h5>RLHF Pipeline:</h5>
+                        <ol class="styled-list numbered">
+                            <li>Collect human preference data (A vs B comparisons)</li>
+                            <li>Train reward model to predict preferences</li>
+                            <li>Use PPO to optimize LLM against reward model</li>
+                            <li>Iterate with updated preference data</li>
+                        </ol>
+
+                        <h5>Domain-Specific Fine-Tuning:</h5>
+                        <ul class="styled-list">
+                            <li>Medical models (PMC-LLaMA, Med-PaLM)</li>
+                            <li>Legal models (LegalBench)</li>
+                            <li>Code models (CodeLLaMA, StarCoder)</li>
+                            <li>Math models (MAmmoTH, MetaMath)</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2109.01652" target="_blank" rel="noopener">"Finetuned
+                                    Language Models Are Zero-Shot Learners" (FLAN)</a></li>
+                            <li><a href="https://arxiv.org/abs/2212.10560" target="_blank"
+                                    rel="noopener">"Self-Instruct: Aligning Language Models with Self-Generated
+                                    Instructions"</a></li>
+                            <li><a href="https://arxiv.org/abs/2203.02155" target="_blank" rel="noopener">"Training
+                                    Language Models to Follow Instructions with Human Feedback" (InstructGPT)</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://github.com/tatsu-lab/stanford_alpaca" target="_blank"
+                                    rel="noopener">Alpaca</a></li>
+                            <li><a href="https://github.com/LAION-AI/Open-Assistant" target="_blank"
+                                    rel="noopener">OpenAssistant</a></li>
+                            <li><a href="https://github.com/huggingface/trl" target="_blank" rel="noopener">TRL Library
+                                    (for RLHF)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.6 Model Compression -->
+                    <div class="subsection">
+                        <h4>2.6 Model Compression & Efficiency</h4>
+                        <p><strong>What:</strong> Making models smaller and faster while preserving capability.</p>
+
+                        <h5>Techniques:</h5>
+
+                        <div class="info-card">
+                            <h6>Quantization</h6>
+                            <ul class="styled-list">
+                                <li>FP32 → FP16 → INT8 → INT4</li>
+                                <li>Post-training quantization (no retraining)</li>
+                                <li>Quantization-aware training (fine-tune after quantizing)</li>
+                                <li>GPTQ, AWQ, GGML formats</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Pruning</h6>
+                            <ul class="styled-list">
+                                <li>Removing less important neurons/connections</li>
+                                <li>Structured pruning (remove entire channels)</li>
+                                <li>Unstructured pruning (remove individual weights)</li>
+                                <li>Lottery ticket hypothesis</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Distillation</h6>
+                            <ul class="styled-list">
+                                <li>Training small "student" model to mimic large "teacher"</li>
+                                <li>DistilBERT (66% smaller, 95% performance)</li>
+                                <li>TinyBERT</li>
+                                <li>Knowledge distillation for LLMs</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Low-Rank Adaptation</h6>
+                            <ul class="styled-list">
+                                <li>LoRA (Low-Rank Adaptation)</li>
+                                <li>QLoRA (Quantized LoRA)</li>
+                                <li>Adapter layers instead of full fine-tuning</li>
+                                <li>90%+ parameter reduction for fine-tuning</li>
+                            </ul>
+                        </div>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2106.09685" target="_blank" rel="noopener">"LoRA:
+                                    Low-Rank Adaptation of Large Language Models"</a></li>
+                            <li><a href="https://arxiv.org/abs/2305.14314" target="_blank" rel="noopener">"QLoRA:
+                                    Efficient Finetuning of Quantized LLMs"</a></li>
+                            <li><a href="https://arxiv.org/abs/2210.17323" target="_blank" rel="noopener">"GPTQ:
+                                    Accurate Post-Training Quantization for GPT"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://github.com/IST-DASLab/gptq" target="_blank" rel="noopener">GPTQ</a>
+                            </li>
+                            <li><a href="https://github.com/ggerganov/llama.cpp" target="_blank"
+                                    rel="noopener">llama.cpp (efficient inference)</a></li>
+                            <li><a href="https://github.com/TimDettmers/bitsandbytes" target="_blank"
+                                    rel="noopener">bitsandbytes</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Layer 2 Outputs and Who Works Here -->
+                    <!-- Layer 2 Outputs and Who Works Here -->
+                    <div class="bento-grid">
+                        <div class="toc-card">
+                            <h4>Foundation Layer: Typical Outputs</h4>
+                            <ul class="check-list">
+                                <li>Pre-trained Base Models (GPT-3, LLaMA, Mistral)</li>
+                                <li>Instruction-Tuned Models (GPT-4, Claude, Gemini)</li>
+                                <li>Domain-Specialized Models (CodeLLaMA, Med-PaLM)</li>
+                                <li>Model Weights & Checkpoints</li>
+                            </ul>
+                        </div>
+                        <div class="toc-card">
+                            <h4>Who Works Here?</h4>
+                            <ul class="people-list">
+                                <li>Applied Scientists / Research Engineers</li>
+                                <li>ML Infrastructure Engineers</li>
+                                <li>Data Engineers</li>
+                                <li>Distributed Systems Specialists</li>
+                                <li>Evaluation Scientists</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Layers 3-8 and Additional Sections -->
+            <!-- This file contains the remaining content to be appended to index.html -->
+
+            <!-- Layer 3: Platform -->
+            <article class="layer-section" id="layer-3">
+                <div class="layer-header layer-3-bg">
+                    <span class="material-symbols-rounded layer-icon">hub</span>
+                    <div class="layer-info">
+                        <h3>Layer 3: Platform Layer</h3>
+                        <p class="layer-tagline">"The Distribution/Access Layer"</p>
+                    </div>
+                </div>
+
+                <div class="layer-content">
+                    <div class="bento-grid">
+                        <a href="https://huggingface.co/models" target="_blank" rel="noopener" class="toc-card">
+                            <h4>Definition</h4>
+                            <p>Making foundation models accessible to developers through APIs, cloud platforms, and
+                                hosting services.</p>
+                        </a>
+                        <a href="https://platform.openai.com/docs/api-reference" target="_blank" rel="noopener"
+                            class="toc-card">
+                            <h4>3.1 Proprietary Model APIs</h4>
+                            <p><strong>What:</strong> Commercial APIs for closed-source models.</p>
+                        </a>
+                    </div>
+
+                    <div class="subsection">
+                        <h5>Major Providers:</h5>
+
+                        <div class="info-card">
+                            <h6>OpenAI</h6>
+                            <ul class="styled-list">
+                                <li>Models: GPT-4 Turbo, GPT-4o, GPT-3.5, o1, o3</li>
+                                <li>API: RESTful, streaming support</li>
+                                <li>Pricing: Token-based ($0.01-$0.12 per 1K tokens)</li>
+                                <li>Features: Function calling, vision, audio</li>
+                                <li>Docs: <a href="https://platform.openai.com/docs" target="_blank"
+                                        rel="noopener">platform.openai.com/docs</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Anthropic</h6>
+                            <ul class="styled-list">
+                                <li>Models: Claude 3.5 Sonnet, Claude 3 Opus, Haiku</li>
+                                <li>API: Similar to OpenAI structure</li>
+                                <li>Features: 200K context window, vision</li>
+                                <li>Docs: <a href="https://docs.anthropic.com" target="_blank"
+                                        rel="noopener">docs.anthropic.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Google (Gemini)</h6>
+                            <ul class="styled-list">
+                                <li>Models: Gemini 1.5 Pro, Gemini 1.0 Ultra</li>
+                                <li>API: Via Google AI Studio or Vertex AI</li>
+                                <li>Features: Native multimodal, 2M context</li>
+                                <li>Docs: <a href="https://ai.google.dev/docs" target="_blank"
+                                        rel="noopener">ai.google.dev/docs</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Mistral AI</h6>
+                            <ul class="styled-list">
+                                <li>Models: Mistral Large, Medium, Small</li>
+                                <li>API: OpenAI-compatible</li>
+                                <li>European alternative</li>
+                                <li>Docs: <a href="https://docs.mistral.ai" target="_blank"
+                                        rel="noopener">docs.mistral.ai</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Cohere</h6>
+                            <ul class="styled-list">
+                                <li>Models: Command R+, Embed (embeddings)</li>
+                                <li>Specialized in enterprise search</li>
+                                <li>Docs: <a href="https://docs.cohere.com" target="_blank"
+                                        rel="noopener">docs.cohere.com</a></li>
+                            </ul>
+                        </div>
+
+                        <h5>API Features:</h5>
+                        <ul class="styled-list">
+                            <li>Streaming responses (SSE - Server-Sent Events)</li>
+                            <li>Function/tool calling</li>
+                            <li>JSON mode (structured outputs)</li>
+                            <li>Vision capabilities</li>
+                            <li>Prompt caching</li>
+                            <li>Batch processing</li>
+                            <li>Fine-tuning APIs</li>
+                        </ul>
+
+                        <h5>Key Considerations:</h5>
+                        <ul class="styled-list">
+                            <li>Latency (typically 50-500ms TTFT)</li>
+                            <li>Cost per token</li>
+                            <li>Rate limits</li>
+                            <li>Context window size</li>
+                            <li>Data privacy policies</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3.2 Cloud AI Platforms -->
+                    <div class="subsection">
+                        <h4>3.2 Cloud AI Platforms</h4>
+                        <p><strong>What:</strong> Enterprise-grade managed services for AI deployment.</p>
+
+                        <div class="info-card">
+                            <h6>AWS Bedrock</h6>
+                            <ul class="styled-list">
+                                <li>Access to Claude, Mistral, Meta LLaMA, Cohere</li>
+                                <li>Private VPC deployment</li>
+                                <li>Knowledge bases (RAG as a service)</li>
+                                <li>Agents service</li>
+                                <li>Guardrails for content filtering</li>
+                                <li><a href="https://aws.amazon.com/bedrock/" target="_blank"
+                                        rel="noopener">aws.amazon.com/bedrock</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Azure AI Foundry (formerly Azure OpenAI)</h6>
+                            <ul class="styled-list">
+                                <li>Exclusive access to OpenAI models</li>
+                                <li>GPT-4, GPT-3.5, Embeddings, DALL-E</li>
+                                <li>Enterprise compliance (HIPAA, SOC 2)</li>
+                                <li>Content Safety features</li>
+                                <li><a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service"
+                                        target="_blank" rel="noopener">Azure OpenAI Service</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Google Cloud Vertex AI</h6>
+                            <ul class="styled-list">
+                                <li>Gemini models</li>
+                                <li>PaLM 2, Codey, Imagen</li>
+                                <li>Model Garden (third-party models)</li>
+                                <li>Vector Search</li>
+                                <li>AutoML capabilities</li>
+                                <li><a href="https://cloud.google.com/vertex-ai" target="_blank"
+                                        rel="noopener">cloud.google.com/vertex-ai</a></li>
+                            </ul>
+                        </div>
+
+                        <h5>Platform Features:</h5>
+                        <ul class="styled-list">
+                            <li>Private deployment (data never leaves your cloud)</li>
+                            <li>SLA guarantees</li>
+                            <li>Custom fine-tuning</li>
+                            <li>Compliance certifications</li>
+                            <li>Integrated MLOps tools</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3.3 Open-Source Model Hosting -->
+                    <div class="subsection">
+                        <h4>3.3 Open-Source Model Hosting</h4>
+                        <p><strong>What:</strong> Running open models locally or on your infrastructure.</p>
+
+                        <h5>Model Repositories:</h5>
+
+                        <div class="info-card">
+                            <h6>Hugging Face Hub</h6>
+                            <ul class="styled-list">
+                                <li>500K+ models</li>
+                                <li>Model cards, documentation</li>
+                                <li>Direct download or Transformers library</li>
+                                <li>Spaces for demos</li>
+                                <li><a href="https://huggingface.co/models" target="_blank"
+                                        rel="noopener">huggingface.co/models</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Ollama</h6>
+                            <ul class="styled-list">
+                                <li>Local LLM runtime (like Docker for models)</li>
+                                <li>One-command model download</li>
+                                <li>Supports LLaMA, Mistral, Phi, Gemma, etc.</li>
+                                <li>API server included</li>
+                                <li><a href="https://ollama.ai/" target="_blank" rel="noopener">ollama.ai</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>LM Studio</h6>
+                            <ul class="styled-list">
+                                <li>Desktop app for running LLMs</li>
+                                <li>Mac, Windows, Linux</li>
+                                <li>User-friendly GUI</li>
+                                <li><a href="https://lmstudio.ai/" target="_blank" rel="noopener">lmstudio.ai</a></li>
+                            </ul>
+                        </div>
+
+                        <h5>Popular Open Models:</h5>
+                        <ul class="styled-list">
+                            <li>LLaMA 3.3 (Meta, 70B parameters)</li>
+                            <li>Mistral 7B, Mixtral 8x7B</li>
+                            <li>Phi-3 (Microsoft, small but capable)</li>
+                            <li>Gemma (Google)</li>
+                            <li>Qwen (Alibaba)</li>
+                            <li>DeepSeek</li>
+                            <li>Yi models (01.AI)</li>
+                        </ul>
+
+                        <h5>Benefits of Open Source:</h5>
+                        <ul class="styled-list">
+                            <li>Full control and customization</li>
+                            <li>No per-token costs (just compute)</li>
+                            <li>Data privacy (runs locally)</li>
+                            <li>Fine-tuning without restrictions</li>
+                            <li>Transparent model behavior</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3.4 Model Serving Infrastructure -->
+                    <div class="subsection">
+                        <h4>3.4 Model Serving Infrastructure</h4>
+                        <p><strong>What:</strong> Production systems for efficient model inference.</p>
+
+                        <h5>Serving Frameworks:</h5>
+
+                        <div class="info-card">
+                            <h6>vLLM</h6>
+                            <ul class="styled-list">
+                                <li>PagedAttention algorithm (20x throughput improvement)</li>
+                                <li>Continuous batching</li>
+                                <li>Streaming outputs</li>
+                                <li>SOTA performance</li>
+                                <li><a href="https://github.com/vllm-project/vllm" target="_blank"
+                                        rel="noopener">github.com/vllm-project/vllm</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>TensorRT-LLM (NVIDIA)</h6>
+                            <ul class="styled-list">
+                                <li>Optimized for NVIDIA GPUs</li>
+                                <li>INT8/INT4 quantization support</li>
+                                <li>Multi-GPU support</li>
+                                <li><a href="https://github.com/NVIDIA/TensorRT-LLM" target="_blank"
+                                        rel="noopener">github.com/NVIDIA/TensorRT-LLM</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Text Generation Inference (TGI, Hugging Face)</h6>
+                            <ul class="styled-list">
+                                <li>Production-ready serving</li>
+                                <li>Token streaming</li>
+                                <li>Tensor parallelism</li>
+                                <li>Safetensors loading</li>
+                                <li><a href="https://github.com/huggingface/text-generation-inference" target="_blank"
+                                        rel="noopener">github.com/huggingface/text-generation-inference</a></li>
+                            </ul>
+                        </div>
+
+                        <h5>Optimization Techniques:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Quantization:</strong> INT8, INT4, GPTQ, AWQ</li>
+                            <li><strong>Paged Attention:</strong> Efficient KV cache management</li>
+                            <li><strong>Continuous Batching:</strong> Process requests as they arrive</li>
+                            <li><strong>Speculative Decoding:</strong> Use small model to speed up large model</li>
+                            <li><strong>Flash Attention:</strong> Memory-efficient attention</li>
+                        </ul>
+
+                        <h5>Managed API Hosting:</h5>
+                        <ul class="styled-list">
+                            <li><a href="https://replicate.com/" target="_blank" rel="noopener">Replicate</a> - Run open
+                                models via
+                                API</li>
+                            <li><a href="https://www.together.ai/" target="_blank" rel="noopener">Together AI</a> - Open
+                                model APIs
+                            </li>
+                            <li><a href="https://www.anyscale.com/" target="_blank" rel="noopener">Anyscale</a> -
+                                Ray-based serving
+                            </li>
+                            <li><a href="https://fireworks.ai/" target="_blank" rel="noopener">Fireworks AI</a> -
+                                Optimized
+                                inference</li>
+                        </ul>
+                    </div>
+
+                    <!-- Layer 3 Summary -->
+                    <div class="layer-summary">
+                        <div class="summary-box">
+                            <h4>Platform Layer: Typical Outputs</h4>
+                            <ul class="check-list">
+                                <li>Model APIs & Endpoints</li>
+                                <li>SDKs & Client Libraries</li>
+                                <li>Serving Infrastructure (vLLM, TGI)</li>
+                                <li>Deployment Tools (Ollama, LM Studio)</li>
+                            </ul>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Who Works Here?</h4>
+                            <ul class="people-list">
+                                <li>ML Platform Engineers</li>
+                                <li>Infrastructure/DevOps Engineers</li>
+                                <li>API Product Managers</li>
+                                <li>Developer Experience Engineers</li>
+                                <li>Solutions Architects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Layer 4: Builder -->
+            <article class="layer-section" id="layer-4">
+                <div class="layer-header layer-4-bg">
+                    <span class="material-symbols-rounded layer-icon">construction</span>
+                    <div class="layer-info">
+                        <h3>Layer 4: Builder Layer</h3>
+                        <p class="layer-tagline">"The Intelligence Shaping Layer"</p>
+                    </div>
+                </div>
+
+                <div class="layer-content">
+                    <div class="bento-grid">
+                        <a href="https://python.langchain.com/docs/get_started/introduction" target="_blank"
+                            rel="noopener" class="toc-card">
+                            <h4>Definition</h4>
+                            <p>Techniques, patterns, and frameworks for building intelligent systems on top of
+                                foundation models—going beyond simple prompting.</p>
+                        </a>
+                        <a href="https://www.promptingguide.ai/" target="_blank" rel="noopener" class="toc-card">
+                            <h4>4.1 Prompt Engineering</h4>
+                            <p><strong>What:</strong> Crafting inputs to elicit desired model behavior.</p>
+                        </a>
+                    </div>
+
+                    <!-- 4.1 Prompt Engineering -->
+                    <div class="subsection">
+                        <div class="bento-grid">
+                            <a href="https://www.promptingguide.ai/techniques/zeroshot" target="_blank" rel="noopener"
+                                class="toc-card">
+                                <h6>Zero-Shot Prompting</h6>
+                                <pre><code>Classify the sentiment: "I love this product!"</code></pre>
+                            </a>
+
+                            <div class="info-card">
+                                <h6>Few-Shot Prompting</h6>
+                                <pre><code>Classify sentiment (Positive/Negative):
+"Great service" → Positive
+"Terrible experience" → Negative
+"I love this product!" → ?</code></pre>
+                            </div>
+
+                            <div class="info-card">
+                                <h6>Chain-of-Thought (CoT)</h6>
+                                <pre><code>Problem: If John has 3 apples and buys 2 more, 
+then gives 1 to Sarah, how many does he have?
+
+Let's think step by step:
+1. John starts with 3 apples
+2. He buys 2 more: 3 + 2 = 5
+3. He gives 1 to Sarah: 5 - 1 = 4
+Answer: 4 apples</code></pre>
+                            </div>
+
+                            <a href="https://www.promptingguide.ai/techniques/cot" target="_blank" rel="noopener"
+                                class="toc-card">
+                                <h6>Chain-of-Thought (CoT)</h6>
+                                <pre><code>Problem: ...
+Let's think step by step:
+...
+Answer: 4 apples</code></pre>
+                            </a>
+                        </div>
+
+                        <div class="section-header-card">
+                            <h5>Advanced Techniques:</h5>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Self-Consistency:</strong> Generate multiple reasoning paths, vote on most
+                                common answer
+                            </li>
+                            <li><strong>Tree of Thoughts (ToT):</strong> Explore multiple reasoning branches, backtrack
+                                when stuck
+                            </li>
+                            <li><strong>ReAct (Reasoning + Acting):</strong> Interleave thoughts and actions in "Think,
+                                Act,
+                                Observe" loop</li>
+                            <li><strong>Meta-Prompting:</strong> Prompt to generate prompts, optimization loops</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2201.11903" target="_blank"
+                                    rel="noopener">"Chain-of-Thought
+                                    Prompting Elicits Reasoning"</a></li>
+                            <li><a href="https://arxiv.org/abs/2305.10601" target="_blank" rel="noopener">"Tree of
+                                    Thoughts:
+                                    Deliberate Problem Solving"</a></li>
+                            <li><a href="https://arxiv.org/abs/2210.03629" target="_blank" rel="noopener">"ReAct:
+                                    Synergizing
+                                    Reasoning and Acting"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://www.promptingguide.ai/" target="_blank" rel="noopener">Prompt
+                                    Engineering Guide</a>
+                            </li>
+                            <li><a href="https://github.com/openai/openai-cookbook" target="_blank"
+                                    rel="noopener">OpenAI
+                                    Cookbook</a></li>
+                            <li><a href="https://learnprompting.org/" target="_blank" rel="noopener">Learn Prompting</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 4.2 RAG -->
+                    <div class="subsection">
+                        <h4>4.2 Retrieval-Augmented Generation (RAG)</h4>
+                        <p><strong>What:</strong> Connecting LLMs to external knowledge bases to provide grounded,
+                            up-to-date
+                            answers.</p>
+
+                        <h5>RAG Pipeline:</h5>
+
+                        <div class="info-card">
+                            <h6>1. Indexing Phase</h6>
+                            <pre><code>Documents → Chunking → Embedding → Vector DB</code></pre>
+                            <p><strong>Chunking Strategies:</strong> Fixed-size chunks, semantic chunking, recursive
+                                chunking,
+                                document structure-aware</p>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>2. Retrieval Phase</h6>
+                            <pre><code>Query → Embed → Vector Search → Top-K Documents</code></pre>
+                            <p><strong>Methods:</strong> Dense Retrieval, Sparse Retrieval (BM25), Hybrid, Reranking</p>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>3. Generation Phase</h6>
+                            <pre><code>Query + Retrieved Docs → LLM → Answer + Citations</code></pre>
+                        </div>
+
+                        <h5>Embedding Models:</h5>
+                        <ul class="styled-list">
+                            <li>OpenAI text-embedding-3-large (3072 dims)</li>
+                            <li>Cohere embed-v3</li>
+                            <li>BGE (BAAI General Embedding)</li>
+                            <li>E5 (Microsoft)</li>
+                            <li>Sentence Transformers (open source)</li>
+                        </ul>
+
+                        <h5>Vector Databases:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Pinecone:</strong> Managed, serverless</li>
+                            <li><strong>Weaviate:</strong> Open source, GraphQL</li>
+                            <li><strong>Qdrant:</strong> Rust-based, fast</li>
+                            <li><strong>Milvus:</strong> Scalable, Zilliz cloud</li>
+                            <li><strong>Chroma:</strong> Lightweight, embedded</li>
+                            <li><strong>Pgvector:</strong> PostgreSQL extension</li>
+                            <li><strong>FAISS:</strong> Facebook, in-memory</li>
+                        </ul>
+
+                        <h5>Advanced RAG Patterns:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Multi-Query RAG:</strong> Generate multiple query variations, merge results</li>
+                            <li><strong>HyDE:</strong> Generate hypothetical answer first, embed and search</li>
+                            <li><strong>Parent-Child Chunking:</strong> Index small chunks, retrieve larger parent
+                                documents</li>
+                            <li><strong>Agentic RAG:</strong> Agent decides when to retrieve, can retrieve multiple
+                                times</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2005.11401" target="_blank"
+                                    rel="noopener">"Retrieval-Augmented
+                                    Generation for Knowledge-Intensive NLP"</a></li>
+                            <li><a href="https://arxiv.org/abs/2307.03172" target="_blank" rel="noopener">"Lost in the
+                                    Middle: How
+                                    Language Models Use Long Contexts"</a></li>
+                            <li><a href="https://arxiv.org/abs/2310.11511" target="_blank" rel="noopener">"Self-RAG:
+                                    Learning to
+                                    Retrieve, Generate, and Critique"</a></li>
+                        </ul>
+
+                        <h5>Resources:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://python.langchain.com/docs/use_cases/question_answering/"
+                                    target="_blank" rel="noopener">LangChain RAG Tutorial</a></li>
+                            <li><a href="https://www.llamaindex.ai/" target="_blank" rel="noopener">LlamaIndex</a></li>
+                            <li><a href="https://www.pinecone.io/learn/" target="_blank" rel="noopener">Pinecone
+                                    Learning Center</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 4.3 Memory Management -->
+                    <div class="subsection">
+                        <h4>4.3 Memory Management</h4>
+                        <p><strong>What:</strong> Giving LLMs persistent memory across conversations.</p>
+
+                        <h5>Memory Types:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Short-Term Memory:</strong> Conversation history within context window, last N
+                                messages,
+                                sliding window, summarization when limit reached</li>
+                            <li><strong>Long-Term Memory:</strong> Vector DB of past conversations, semantic search
+                                across history,
+                                entity extraction and storage, user preferences and facts</li>
+                        </ul>
+
+                        <h5>Memory Frameworks:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://python.langchain.com/docs/modules/memory/" target="_blank"
+                                    rel="noopener">LangChain
+                                    Memory</a></li>
+                            <li><a href="https://github.com/cpacker/MemGPT" target="_blank" rel="noopener">MemGPT</a> -
+                                Hierarchical
+                                memory management</li>
+                            <li><a href="https://github.com/mem0ai/mem0" target="_blank" rel="noopener">Mem0</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 4.4 Agentic AI -->
+                    <div class="subsection">
+                        <h4>4.4 Agentic AI & Tool Use</h4>
+                        <p><strong>What:</strong> LLMs that autonomously use tools and execute multi-step tasks.</p>
+
+                        <h5>Core Concepts:</h5>
+                        <pre><code>Agent Architecture: Observe → Think → Act → Observe → ...</code></pre>
+
+                        <h5>Agent Patterns:</h5>
+                        <ul class="styled-list">
+                            <li><strong>ReAct Agent:</strong> Thought → Action → Observation loop</li>
+                            <li><strong>Plan-and-Execute:</strong> Create full plan upfront, execute sequentially</li>
+                            <li><strong>Reflection/Self-Critique:</strong> Agent critiques own outputs, iterates</li>
+                            <li><strong>Multi-Agent Systems:</strong> Specialized agents for different tasks</li>
+                        </ul>
+
+                        <h5>Agent Frameworks:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://github.com/langchain-ai/langgraph" target="_blank"
+                                    rel="noopener">LangGraph
+                                    (LangChain)</a> - Stateful agent workflows</li>
+                            <li><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank"
+                                    rel="noopener">AutoGPT</a>
+                                - Autonomous task completion</li>
+                            <li><a href="https://github.com/joaomdmoura/crewAI" target="_blank"
+                                    rel="noopener">CrewAI</a> -
+                                Multi-agent orchestration</li>
+                            <li><a href="https://github.com/microsoft/autogen" target="_blank" rel="noopener">AutoGen
+                                    (Microsoft)</a> - Multi-agent conversations</li>
+                            <li><a href="https://github.com/geekan/MetaGPT" target="_blank" rel="noopener">MetaGPT</a> -
+                                Software
+                                company simulation</li>
+                        </ul>
+
+                        <h5>Key Papers:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://arxiv.org/abs/2210.03629" target="_blank" rel="noopener">"ReAct:
+                                    Synergizing
+                                    Reasoning and Acting"</a></li>
+                            <li><a href="https://arxiv.org/abs/2303.11366" target="_blank" rel="noopener">"Reflexion:
+                                    Language
+                                    Agents with Verbal Reinforcement Learning"</a></li>
+                            <li><a href="https://arxiv.org/abs/2308.08155" target="_blank" rel="noopener">"AutoGen:
+                                    Enabling
+                                    Next-Gen LLM Applications"</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 4.5 Builder Frameworks -->
+                    <div class="subsection">
+                        <h4>4.5 Builder Frameworks & Libraries</h4>
+                        <p><strong>What:</strong> Tools that combine all builder techniques.</p>
+
+                        <h5>Major Frameworks:</h5>
+
+                        <div class="info-card">
+                            <h6>LangChain</h6>
+                            <ul class="styled-list">
+                                <li>Most popular framework</li>
+                                <li>Chains, agents, memory</li>
+                                <li>100+ integrations</li>
+                                <li>Python & JavaScript</li>
+                                <li><a href="https://github.com/langchain-ai/langchain" target="_blank"
+                                        rel="noopener">github.com/langchain-ai/langchain</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>LlamaIndex (formerly GPT Index)</h6>
+                            <ul class="styled-list">
+                                <li>Specialized in RAG</li>
+                                <li>Data connectors (100+)</li>
+                                <li>Index structures</li>
+                                <li>Query engines</li>
+                                <li><a href="https://github.com/run-llama/llama_index" target="_blank"
+                                        rel="noopener">github.com/run-llama/llama_index</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Other Frameworks</h6>
+                            <ul class="styled-list">
+                                <li><strong>Haystack (deepset):</strong> Production RAG pipelines</li>
+                                <li><strong>Semantic Kernel (Microsoft):</strong> C#, Python, Java, enterprise focus
+                                </li>
+                                <li><strong>DSPy:</strong> Programming model for LM pipelines, auto-optimize prompts
+                                </li>
+                                <li><strong>Guardrails:</strong> Validate LLM outputs, type constraints</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Layer 4 Summary -->
+                    <div class="layer-summary">
+                        <div class="summary-box">
+                            <h4>Builder Layer: Typical Outputs</h4>
+                            <ul class="check-list">
+                                <li>Techniques & Patterns (RAG, Agents, Memory)</li>
+                                <li>Libraries & Frameworks (LangChain, LlamaIndex)</li>
+                                <li>Reference Architectures</li>
+                                <li>Best Practices</li>
+                            </ul>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Who Works Here?</h4>
+                            <ul class="people-list">
+                                <li>AI Engineers</li>
+                                <li>Prompt Engineers</li>
+                                <li>Applied ML Engineers</li>
+                                <li>Solutions Architects</li>
+                                <li>Research Engineers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Layer 5: Application -->
+            <article class="layer-section" id="layer-5">
+                <div class="layer-header layer-5-bg">
+                    <span class="material-symbols-rounded layer-icon">computer</span>
+                    <div class="layer-info">
+                        <h3>Layer 5: Application Layer</h3>
+                        <p class="layer-tagline">"The Productization Layer"</p>
+                    </div>
+                </div>
+
+                <div class="layer-content">
+                    <div class="definition-box">
+                        <h4>Definition</h4>
+                        <p>Building production-ready software products that users interact with—packaging intelligence
+                            into
+                            applications.</p>
+                    </div>
+
+                    <!-- 5.1 Architecture Patterns -->
+                    <div class="subsection">
+                        <h4>5.1 Application Architecture Patterns</h4>
+                        <p><strong>What:</strong> System design for AI-powered applications.</p>
+
+                        <h5>Architecture Types:</h5>
+                        <div class="bento-grid">
+                            <a href="https://chat.openai.com/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>AI-Native Applications</strong>
+                                <p>AI is the core product (e.g., ChatGPT, Perplexity, Character.AI)</p>
+                            </a>
+                            <a href="https://www.notion.so/product/ai" target="_blank" rel="noopener" class="toc-card">
+                                <strong>AI-Integrated Applications</strong>
+                                <p>Existing products adding AI features (e.g., Notion AI, GitHub Copilot, Canva Magic)
+                                </p>
+                            </a>
+                        </div>
+
+                        <h5>Common Patterns:</h5>
+
+                        <div class="info-card">
+                            <h6>Chat Interface Pattern</h6>
+                            <pre><code>Frontend (React) 
+  ↕ WebSocket/SSE
+Backend API
+  ↕
+LLM API + RAG + Vector DB</code></pre>
+                        </div>
+
+                        <div class="info-card">
+                            <h6>Agent + Tools Pattern</h6>
+                            <pre><code>User Request
+  → Agent (LLM)
+  → Tool Selection
+  → Execute Tools (Search, Calc, API)
+  → Synthesize Results
+  → Return to User</code></pre>
+                        </div>
+
+                        <h5>Tech Stacks:</h5>
+                        <div class="bento-grid">
+                            <a href="https://nextjs.org/docs" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Frontend</strong>
+                                <p>Next.js, React, TypeScript, Tailwind</p>
+                            </a>
+                            <a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Backend</strong>
+                                <p>Python (FastAPI), Node.js (Express)</p>
+                            </a>
+                            <a href="https://platform.openai.com/docs" target="_blank" rel="noopener" class="toc-card">
+                                <strong>LLM</strong>
+                                <p>OpenAI API, Anthropic, Together AI</p>
+                            </a>
+                            <a href="https://www.pinecone.io/docs/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Vector DB</strong>
+                                <p>Pinecone, Weaviate, Qdrant</p>
+                            </a>
+                            <a href="https://supabase.com/docs" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Database</strong>
+                                <p>PostgreSQL (Supabase), Redis</p>
+                            </a>
+                            <a href="https://vercel.com/docs" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Deployment</strong>
+                                <p>Vercel, Railway, Render, AWS</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 5.2 UI/UX Patterns -->
+                    <div class="subsection">
+                        <h4>5.2 AI-Specific UI/UX Patterns</h4>
+                        <p><strong>What:</strong> Designing interfaces for AI interactions.</p>
+
+                        <h5>UI Patterns:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Streaming Responses:</strong> Display tokens as generated, prevents long waits
+                            </li>
+                            <li><strong>Regenerate Button:</strong> Try again without re-typing</li>
+                            <li><strong>Edit Last Message:</strong> Modify conversation history</li>
+                            <li><strong>Suggested Prompts:</strong> Guide users on what to ask</li>
+                            <li><strong>Citations & Sources:</strong> Link to retrieved documents, transparency</li>
+                            <li><strong>Confidence Indicators:</strong> Show when AI is uncertain</li>
+                            <li><strong>Progress Indicators for Agents:</strong> "Searching web...", "Analyzing
+                                documents..."</li>
+                        </ul>
+                    </div>
+
+                    <!-- 5.3 Safety & Guardrails -->
+                    <div class="subsection">
+                        <h4>5.3 Safety & Guardrails</h4>
+                        <p><strong>What:</strong> Preventing misuse and ensuring safe outputs.</p>
+
+                        <h5>Input Validation:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Prompt Injection Detection:</strong> Identify attempts to override system prompt
+                            </li>
+                            <li><strong>Jailbreak Prevention:</strong> Detect adversarial prompts</li>
+                            <li><strong>PII Detection:</strong> Scan for SSNs, credit cards, emails, redact before LLM
+                            </li>
+                        </ul>
+
+                        <h5>Output Validation:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Toxicity Filtering:</strong> Perspective API, OpenAI Moderation</li>
+                            <li><strong>Fact-Checking:</strong> Verify claims against knowledge base</li>
+                            <li><strong>Bias Detection:</strong> Check for stereotypes</li>
+                        </ul>
+
+                        <h5>Implementation Tools:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://github.com/guardrails-ai/guardrails" target="_blank"
+                                    rel="noopener">Guardrails
+                                    AI</a></li>
+                            <li><a href="https://github.com/NVIDIA/NeMo-Guardrails" target="_blank" rel="noopener">NeMo
+                                    Guardrails
+                                    (NVIDIA)</a></li>
+                            <li><a href="https://github.com/laiyer-ai/llm-guard" target="_blank" rel="noopener">LLM
+                                    Guard</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 5.4 Example Applications -->
+                    <div class="subsection">
+                        <h4>5.4 Example Applications by Category</h4>
+
+                        <h5>Conversational AI:</h5>
+                        <ul class="styled-list">
+                            <li><strong>ChatGPT:</strong> General assistant</li>
+                            <li><strong>Character.AI:</strong> Roleplay chatbots</li>
+                            <li><strong>Pi:</strong> Emotional support AI</li>
+                        </ul>
+
+                        <h5>Search & Research:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Perplexity:</strong> AI-powered search</li>
+                            <li><strong>Elicit:</strong> Research assistant</li>
+                            <li><strong>Consensus:</strong> Academic paper search</li>
+                        </ul>
+
+                        <h5>Coding Assistants:</h5>
+                        <ul class="styled-list">
+                            <li><strong>GitHub Copilot:</strong> IDE autocomplete</li>
+                            <li><strong>Cursor:</strong> AI-first code editor</li>
+                            <li><strong>Codeium:</strong> Free Copilot alternative</li>
+                        </ul>
+
+                        <h5>Creative Tools:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Midjourney:</strong> Image generation</li>
+                            <li><strong>RunwayML:</strong> Video editing</li>
+                            <li><strong>Udio/Suno:</strong> Music generation</li>
+                            <li><strong>ElevenLabs:</strong> Voice cloning</li>
+                        </ul>
+                    </div>
+
+                    <!-- Layer 5 Summary -->
+                    <div class="layer-summary">
+                        <div class="summary-box">
+                            <h4>Application Layer: Typical Outputs</h4>
+                            <ul class="check-list">
+                                <li>Production AI Applications</li>
+                                <li>User Interfaces</li>
+                                <li>API Services</li>
+                                <li>Mobile/Web Apps</li>
+                            </ul>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Who Works Here?</h4>
+                            <ul class="people-list">
+                                <li>Full-Stack Developers</li>
+                                <li>Frontend Engineers</li>
+                                <li>Backend Engineers</li>
+                                <li>Product Managers</li>
+                                <li>UI/UX Designers</li>
+                                <li>QA Engineers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Layer 6: Operation -->
+            <article class="layer-section" id="layer-6">
+                <div class="layer-header layer-6-bg">
+                    <span class="material-symbols-rounded layer-icon">settings</span>
+                    <div class="layer-info">
+                        <h3>Layer 6: Operation Layer (LLMOps)</h3>
+                        <p class="layer-tagline">"The Reliability Layer"</p>
+                    </div>
+                </div>
+
+                <div class="layer-content">
+                    <div class="definition-box">
+                        <h4>Definition</h4>
+                        <p>Ensuring deployed AI systems run reliably, securely, and efficiently at scale in production.
+                        </p>
+                    </div>
+
+                    <!-- 6.1 Deployment Strategies -->
+                    <div class="subsection">
+                        <h4>6.1 Deployment Strategies</h4>
+                        <p><strong>What:</strong> Getting AI apps into production safely.</p>
+
+                        <h5>Containerization:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Docker:</strong> Package app + dependencies, consistent environments</li>
+                            <li><strong>Docker Compose:</strong> Multi-container apps, define services</li>
+                            <li><strong>Kubernetes:</strong> Orchestrate at scale, auto-scaling, self-healing</li>
+                        </ul>
+
+                        <h5>Deployment Patterns:</h5>
+                        <div class="bento-grid">
+                            <a href="https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/welcome.html"
+                                target="_blank" rel="noopener" class="toc-card">
+                                <strong>Blue-Green Deployment</strong>
+                                <p>Run two identical environments, instant switch</p>
+                            </a>
+                            <a href="https://martinfowler.com/bliki/CanaryRelease.html" target="_blank" rel="noopener"
+                                class="toc-card">
+                                <strong>Canary Deployment</strong>
+                                <p>Gradually roll out to small % of users</p>
+                            </a>
+                            <a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/"
+                                target="_blank" rel="noopener" class="toc-card">
+                                <strong>Rolling Updates</strong>
+                                <p>Update instances one by one, no downtime</p>
+                            </a>
+                            <a href="https://launchdarkly.com/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Feature Flags</strong>
+                                <p>Toggle features without redeploying</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 6.2 Monitoring -->
+                    <div class="subsection">
+                        <h4>6.2 Monitoring & Observability</h4>
+                        <p><strong>What:</strong> Understanding what's happening in production.</p>
+
+                        <h5>Key Metrics:</h5>
+                        <div class="bento-grid">
+                            <a href="https://smith.langchain.com/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Latency</strong>
+                                <p>Time to first token (TTFT), total time</p>
+                            </a>
+                            <a href="https://grafana.com/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Throughput</strong>
+                                <p>Requests per second</p>
+                            </a>
+                            <a href="https://www.helicone.ai/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Cost</strong>
+                                <p>Total spend, cost per request</p>
+                            </a>
+                            <a href="https://www.langfuse.com/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Quality</strong>
+                                <p>User feedback, regeneration rate, error rate</p>
+                            </a>
+                        </div>
+
+                        <h5>Monitoring Tools:</h5>
+                        <ul class="resource-list">
+                            <li><a href="https://smith.langchain.com/" target="_blank" rel="noopener">LangSmith</a> -
+                                LLM-specific
+                                monitoring</li>
+                            <li><a href="https://www.helicone.ai/" target="_blank" rel="noopener">Helicone</a> - Cost
+                                tracking</li>
+                            <li><a href="https://prometheus.io/" target="_blank" rel="noopener">Prometheus</a> - Metrics
+                                collection
+                            </li>
+                            <li><a href="https://grafana.com/" target="_blank" rel="noopener">Grafana</a> -
+                                Visualization dashboards
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 6.3 Cost Management -->
+                    <div class="subsection">
+                        <h4>6.3 Cost Management & Optimization</h4>
+                        <p><strong>What:</strong> Controlling AI operational expenses.</p>
+
+                        <h5>Optimization Strategies:</h5>
+                        <div class="bento-grid">
+                            <a href="https://www.helicone.ai/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Smart Routing</strong>
+                                <p>Route simple queries to cheaper models (save 50-80%)</p>
+                            </a>
+                            <a href="https://redis.io/docs/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Caching</strong>
+                                <p>Cache common queries, prompt caching (90% discount)</p>
+                            </a>
+                            <a href="https://platform.openai.com/docs/guides/batch" target="_blank" rel="noopener"
+                                class="toc-card">
+                                <strong>Batch Processing</strong>
+                                <p>Combine non-urgent requests (50% discount)</p>
+                            </a>
+                            <a href="https://cookbook.openai.com/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Context Optimization</strong>
+                                <p>Remove unnecessary tokens, summarize</p>
+                            </a>
+                            <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Model Selection</strong>
+                                <p>Use smallest capable model</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Layer 6 Summary -->
+                    <div class="layer-summary">
+                        <div class="summary-box">
+                            <h4>Operation Layer: Typical Outputs</h4>
+                            <ul class="check-list">
+                                <li>Production Deployments</li>
+                                <li>Monitoring Dashboards</li>
+                                <li>Alert Systems</li>
+                                <li>Performance Reports</li>
+                                <li>SLAs & Uptime</li>
+                            </ul>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Who Works Here?</h4>
+                            <ul class="people-list">
+                                <li>DevOps Engineers / SREs</li>
+                                <li>MLOps Engineers</li>
+                                <li>Platform Engineers</li>
+                                <li>Security Engineers</li>
+                                <li>Data Engineers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Layer 7: Distribution -->
+            <article class="layer-section" id="layer-7">
+                <div class="layer-header layer-7-bg">
+                    <span class="material-symbols-rounded layer-icon">store</span>
+                    <div class="layer-info">
+                        <h3>Layer 7: Distribution Layer</h3>
+                        <p class="layer-tagline">"The Business Growth Layer"</p>
+                    </div>
+                </div>
+
+                <div class="layer-content">
+                    <div class="definition-box">
+                        <h4>Definition</h4>
+                        <p>Strategies and channels for bringing AI products to market and scaling to millions of users.
+                        </p>
+                    </div>
+
+                    <!-- 7.1 Delivery Channels -->
+                    <div class="subsection">
+                        <h4>7.1 Delivery Channels</h4>
+                        <p><strong>What:</strong> How users access your AI product.</p>
+
+                        <div class="bento-grid">
+                            <a href="https://vercel.com/templates/ai" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Web Applications</strong>
+                                <p>Most common, no install friction</p>
+                            </a>
+                            <a href="https://reactnative.dev/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Mobile Apps</strong>
+                                <p>iOS, Android, native experience</p>
+                            </a>
+                            <a href="https://developer.chrome.com/docs/extensions" target="_blank" rel="noopener"
+                                class="toc-card">
+                                <strong>Browser Extensions</strong>
+                                <p>Context-aware, low friction</p>
+                            </a>
+                            <a href="https://www.electronjs.org/" target="_blank" rel="noopener" class="toc-card">
+                                <strong>Desktop Applications</strong>
+                                <p>Deep OS integration, offline</p>
+                            </a>
+                            <a href="https://platform.openai.com/docs/api-reference" target="_blank" rel="noopener"
+                                class="toc-card">
+                                <strong>API Products</strong>
+                                <p>Developer-focused, B2B</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 7.2 Platform Integrations -->
+                    <div class="subsection">
+                        <h4>7.2 Platform Integrations & Ecosystem</h4>
+                        <p><strong>What:</strong> Building on existing platforms to reach users.</p>
+
+                        <h5>Marketplace Integrations:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Slack Apps:</strong> 20M+ daily users, chatbots</li>
+                            <li><strong>Microsoft Teams:</strong> Enterprise focus, 280M+ users</li>
+                            <li><strong>Zapier:</strong> Connect 6000+ apps, no-code automation</li>
+                            <li><strong>VS Code Extensions:</strong> 14M+ developers</li>
+                            <li><strong>ChatGPT Plugins / GPTs:</strong> Access to 100M+ users</li>
+                        </ul>
+                    </div>
+
+                    <!-- 7.3 Growth Strategies -->
+                    <div class="subsection">
+                        <h4>7.3 Marketing & Growth Strategies</h4>
+
+                        <h5>Content Marketing:</h5>
+                        <ul class="styled-list">
+                            <li>Educational content (blogs, tutorials, YouTube)</li>
+                            <li>SEO for "AI [use case]"</li>
+                            <li>Technical documentation</li>
+                        </ul>
+
+                        <h5>Product-Led Growth:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Freemium:</strong> Free tier for basic use, paid for advanced</li>
+                            <li><strong>Viral Loops:</strong> Share AI outputs, referral programs</li>
+                            <li><strong>Self-Service Onboarding:</strong> Immediate value</li>
+                        </ul>
+
+                        <h5>Community Building:</h5>
+                        <ul class="styled-list">
+                            <li>Discord servers for direct feedback</li>
+                            <li>GitHub for open source components</li>
+                            <li>Developer Relations (conferences, workshops)</li>
+                        </ul>
+                    </div>
+
+                    <!-- 7.4 Pricing -->
+                    <div class="subsection">
+                        <h4>7.4 Pricing & Monetization</h4>
+
+                        <h5>Pricing Models:</h5>
+                        <ul class="styled-list">
+                            <li><strong>Subscription (SaaS):</strong> Monthly/annual plans (ChatGPT Plus $20/mo)</li>
+                            <li><strong>Usage-Based:</strong> Pay per API call, token, generation</li>
+                            <li><strong>Freemium:</strong> Free tier with limits</li>
+                            <li><strong>Credits:</strong> Buy credits, spend on usage</li>
+                            <li><strong>Enterprise:</strong> Custom pricing, volume discounts</li>
+                        </ul>
+                    </div>
+
+                    <!-- Layer 7 Summary -->
+                    <div class="layer-summary">
+                        <div class="summary-box">
+                            <h4>Distribution Layer: Typical Outputs</h4>
+                            <ul class="check-list">
+                                <li>Market Reach (MAU, DAU)</li>
+                                <li>User Growth Metrics</li>
+                                <li>Revenue Growth</li>
+                                <li>Partnership Agreements</li>
+                                <li>Brand Awareness</li>
+                            </ul>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Who Works Here?</h4>
+                            <ul class="people-list">
+                                <li>Growth Marketers</li>
+                                <li>Developer Relations (DevRel)</li>
+                                <li>Partnership Managers</li>
+                                <li>Product Marketers</li>
+                                <li>Community Managers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Layer 8: User -->
+            <article class="layer-section" id="layer-8">
+                <div class="layer-header layer-8-bg">
+                    <span class="material-symbols-rounded layer-icon">person</span>
+                    <div class="layer-info">
+                        <h3>Layer 8: User Layer</h3>
+                        <p class="layer-tagline">"The Value Realization Layer"</p>
+                    </div>
+                </div>
+
+                <div class="layer-content">
+                    <div class="definition-box">
+                        <h4>Definition</h4>
+                        <p>Where end users interact with AI products to solve problems and achieve goals.</p>
+                    </div>
+
+                    <!-- 8.1 Interaction Modes -->
+                    <div class="subsection">
+                        <h4>8.1 User Interaction Modes</h4>
+
+                        <ul class="styled-list">
+                            <li><strong>Text Chat:</strong> Most common interface (ChatGPT, Claude)</li>
+                            <li><strong>Voice:</strong> Speech-to-text → LLM → Text-to-speech</li>
+                            <li><strong>Image Input:</strong> Upload images, ask questions</li>
+                            <li><strong>Multimodal:</strong> Combine text, image, voice</li>
+                            <li><strong>IDE Integration:</strong> Inline code suggestions</li>
+                            <li><strong>Canvas/Artifacts:</strong> Interactive work surfaces</li>
+                        </ul>
+                    </div>
+
+                    <!-- 8.2 Use Cases -->
+                    <div class="subsection">
+                        <h4>8.2 Use Cases & Value Delivered</h4>
+
+                        <ul class="styled-list">
+                            <li><strong>Personal Productivity:</strong> Writing, summarization, learning, planning</li>
+                            <li><strong>Professional Work:</strong> Coding, research, data analysis, content creation
+                            </li>
+                            <li><strong>Creative:</strong> Art generation, music, storytelling, brainstorming</li>
+                            <li><strong>Education:</strong> Personalized tutoring, homework help, study guides</li>
+                            <li><strong>Accessibility:</strong> Vision assistance, reading assistance, translation</li>
+                            <li><strong>Entertainment:</strong> Interactive stories, roleplay, games</li>
+                        </ul>
+                    </div>
+
+                    <!-- Layer 8 Summary -->
+                    <div class="layer-summary">
+                        <div class="summary-box">
+                            <h4>User Layer: Typical Outputs</h4>
+                            <ul class="check-list">
+                                <li>User Behavioral Data</li>
+                                <li>Feedback Signals (explicit & implicit)</li>
+                                <li>Preference Data</li>
+                                <li>Engagement Metrics</li>
+                                <li>User-Generated Content</li>
+                            </ul>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Who Works Here?</h4>
+                            <ul class="people-list">
+                                <li>End Users (all types)</li>
+                                <li>User Researchers</li>
+                                <li>Community Managers</li>
+                                <li>Customer Support Teams</li>
+                                <li>Content Moderators</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- Additional Sections: Feedback Loop, Dimensions, Careers, Projects, Research, Resources, Tools, Applications -->
+
+        <!-- Section 3: Feedback Loop -->
+        <section class="content-section" id="feedback-loop">
+            <div class="section-header">
+                <h2 class="section-title">3. The Feedback Loop <span class="material-symbols-rounded">sync</span></h2>
+            </div>
+
+            <div class="content-block">
+                <h3>How Innovation Flows Backwards</h3>
+                <p>The map isn't just top-down—there's a critical <strong>circular flow</strong> where issues discovered
+                    at the
+                    user layer drive innovation back up to research.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Example: Hallucination Problem</h3>
+                <div class="table-container">
+                    <table class="dimension-table">
+                        <thead>
+                            <tr>
+                                <th>Stage</th>
+                                <th>Action & Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Layer 8</strong></td>
+                                <td>User asks "Who won 2024 NBA Finals?" — AI gives wrong answer. User clicks "Thumbs
+                                    Down"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Layer 6</strong></td>
+                                <td>Monitoring detects spike in negative feedback on sports queries</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Layer 5</strong></td>
+                                <td>Review system prompts — seems fine, not a prompt problem</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Layer 4</strong></td>
+                                <td>Check RAG — retrieval works, but model still generates wrong answer</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Layer 2</strong></td>
+                                <td>Fine-tune on sports facts — improves, but not solved completely</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Layer 1</strong></td>
+                                <td>Research invents Retrieval-Grounded Generation architecture — model references docs
+                                    in reasoning</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Layer 8</strong></td>
+                                <td><span style="color: var(--text-accent);">✓ Hallucinations reduced by 70%</span> —
+                                    user satisfaction improves</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class=\"bento-grid\">\n <a href=\"https://www.anthropic.com/research\" target=\"_blank\"
+                    rel=\"noopener\" class=\"toc-card\">\n <h3>Other Feedback Loop Examples</h3>\n <ul
+                        class=\"styled-list\">\n <li><strong>Performance Issues:</strong> Users complain about slow
+                            responses → Ops optimizes →\n Inspires\n research on efficient architectures (Mamba)</li>\n
+                        <li><strong>Safety Problems:</strong> Users jailbreak model → App adds guardrails → Foundation\n
+                            improves\n alignment → Research develops better RLHF</li>\n <li><strong>New
+                                Capabilities:</strong> Users request \"analyze this PDF\" → Builder creates RAG\n
+                            pattern →\n Platform adds PDF parsing API → Research creates better document understanding
+                            models</li>\n
+                    </ul>\n </a>\n </div>
+        </section>
+
+        <!-- Section 4: Cross-Cutting Dimensions -->
+        <section class="content-section" id="dimensions">
+            <div class="section-header">
+                <h2 class="section-title">4. Cross-Cutting Dimensions</h2>
+            </div>
+
+            <div class="content-block">
+                <p>Four dimensions that exist across ALL eight layers:</p>
+            </div>
+
+            <!-- Dimension 1: Infrastructure -->
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">dns</span> Dimension 1: Infrastructure</h3>
+                <table class="dimension-table">
+                    <thead>
+                        <tr>
+                            <th>Layer</th>
+                            <th>Infrastructure</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Research (1)</td>
+                            <td>Local GPUs (RTX 4090, A100), Google Colab, University clusters</td>
+                        </tr>
+                        <tr>
+                            <td>Foundation (2)</td>
+                            <td>Supercomputing clusters (10,000+ H100s), InfiniBand networking</td>
+                        </tr>
+                        <tr>
+                            <td>Platform (3)</td>
+                            <td>Cloud compute (AWS EC2, GCP), Load balancers, CDNs</td>
+                        </tr>
+                        <tr>
+                            <td>Builder (4)</td>
+                            <td>API servers (FastAPI), Vector databases, Caching (Redis)</td>
+                        </tr>
+                        <tr>
+                            <td>Application (5)</td>
+                            <td>Web servers (Nginx), Databases (PostgreSQL), Object storage</td>
+                        </tr>
+                        <tr>
+                            <td>Operation (6)</td>
+                            <td>Kubernetes clusters, Monitoring infrastructure, CI/CD pipelines</td>
+                        </tr>
+                        <tr>
+                            <td>Distribution (7)</td>
+                            <td>App store infrastructure, Payment processors, Analytics</td>
+                        </tr>
+                        <tr>
+                            <td>User (8)</td>
+                            <td>Client devices (phones, laptops), Browsers, Network connectivity</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Dimension 2: Data -->
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">database</span> Dimension 2: Data</h3>
+                <table class="dimension-table">
+                    <thead>
+                        <tr>
+                            <th>Layer</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Research (1)</td>
+                            <td>Benchmark datasets (MNIST, ImageNet, GLUE), Synthetic data</td>
+                        </tr>
+                        <tr>
+                            <td>Foundation (2)</td>
+                            <td>Internet-scale text (Common Crawl), Code repos, Trillions of tokens</td>
+                        </tr>
+                        <tr>
+                            <td>Platform (3)</td>
+                            <td>Model weights (100GB checkpoint files), Tokenizers, Config files</td>
+                        </tr>
+                        <tr>
+                            <td>Builder (4)</td>
+                            <td>Enterprise knowledge bases, Vector embeddings, Chat histories</td>
+                        </tr>
+                        <tr>
+                            <td>Application (5)</td>
+                            <td>User data (profiles, sessions), Conversation logs, Usage analytics</td>
+                        </tr>
+                        <tr>
+                            <td>Operation (6)</td>
+                            <td>Metrics, logs, Error traces, Performance data</td>
+                        </tr>
+                        <tr>
+                            <td>Distribution (7)</td>
+                            <td>User acquisition metrics, Conversion funnels, A/B test results</td>
+                        </tr>
+                        <tr>
+                            <td>User (8)</td>
+                            <td>User-generated content, Feedback data, Behavioral signals</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Dimension 3: Tools -->
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">build</span> Dimension 3: Tools</h3>
+                <table class="dimension-table">
+                    <thead>
+                        <tr>
+                            <th>Layer</th>
+                            <th>Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Research (1)</td>
+                            <td>Python, JAX, NumPy, Jupyter notebooks, arXiv</td>
+                        </tr>
+                        <tr>
+                            <td>Foundation (2)</td>
+                            <td>PyTorch, TensorFlow, DeepSpeed, Megatron, Weights & Biases</td>
+                        </tr>
+                        <tr>
+                            <td>Platform (3)</td>
+                            <td>vLLM, TGI, Docker, Kubernetes, Ollama, Replicate</td>
+                        </tr>
+                        <tr>
+                            <td>Builder (4)</td>
+                            <td>LangChain, LlamaIndex, Vector DBs, Agent frameworks</td>
+                        </tr>
+                        <tr>
+                            <td>Application (5)</td>
+                            <td>Next.js, React, FastAPI, PostgreSQL, Redis, Vercel</td>
+                        </tr>
+                        <tr>
+                            <td>Operation (6)</td>
+                            <td>LangSmith, Helicone, Prometheus, Grafana, GitHub Actions</td>
+                        </tr>
+                        <tr>
+                            <td>Distribution (7)</td>
+                            <td>Google Analytics, Mixpanel, Stripe, Mailchimp</td>
+                        </tr>
+                        <tr>
+                            <td>User (8)</td>
+                            <td>Web browsers, Mobile apps, ChatGPT/Claude interfaces</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Dimension 4: People -->
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">groups</span> Dimension 4: People</h3>
+                <table class="dimension-table">
+                    <thead>
+                        <tr>
+                            <th>Layer</th>
+                            <th>People</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Research (1)</td>
+                            <td>PhD Researchers, Research Scientists, Mathematicians</td>
+                        </tr>
+                        <tr>
+                            <td>Foundation (2)</td>
+                            <td>Applied Scientists, Research Engineers, Data Engineers</td>
+                        </tr>
+                        <tr>
+                            <td>Platform (3)</td>
+                            <td>Platform Engineers, DevOps, API Product Managers</td>
+                        </tr>
+                        <tr>
+                            <td>Builder (4)</td>
+                            <td>AI Engineers, Prompt Engineers, Applied ML Engineers</td>
+                        </tr>
+                        <tr>
+                            <td>Application (5)</td>
+                            <td>Full-Stack Developers, Product Managers, UI/UX Designers</td>
+                        </tr>
+                        <tr>
+                            <td>Operation (6)</td>
+                            <td>SREs, MLOps Engineers, Security Engineers</td>
+                        </tr>
+                        <tr>
+                            <td>Distribution (7)</td>
+                            <td>Growth Marketers, DevRel, Partnership Managers</td>
+                        </tr>
+                        <tr>
+                            <td>User (8)</td>
+                            <td>End Users, User Researchers, Community Managers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 5: Careers -->
+        <section class="content-section" id="careers">
+            <div class="section-header">
+                <h2 class="section-title">5. Career Pathways & Job Roles</h2>
+            </div>
+
+            <div class="career-grid">
+                <!-- Research Track -->
+                <div class="career-card">
+                    <div class="career-header">
+                        <span class="career-title"><span class="material-symbols-rounded">science</span> Research Track
+                            (Layer 1)</span>
+                    </div>
+                    <p><strong>Profile:</strong> Love math, theory, cutting-edge innovation</p>
+                    <p><strong>Roles:</strong> Research Scientist, PhD Researcher, ML Research Engineer</p>
+                    <p><strong>Skills Needed:</strong> Strong math (linear algebra, calculus, probability), deep
+                        learning
+                        theory, paper writing</p>
+                    <p><strong>Entry Points:</strong> PhD in ML/CS, Research internships, Publish papers</p>
+                    <p><strong>Companies:</strong> OpenAI, Anthropic, Google DeepMind, Meta FAIR</p>
+                </div>
+
+                <!-- Foundation Track -->
+                <div class="career-card">
+                    <div class="career-header">
+                        <span class="career-title"><span class="material-symbols-rounded">factory</span> Foundation
+                            Track (Layer 2)</span>
+                    </div>
+                    <p><strong>Profile:</strong> Build and train massive models at scale</p>
+                    <p><strong>Roles:</strong> Applied Scientist, ML Engineer (Training), Data Engineer</p>
+                    <p><strong>Skills Needed:</strong> PyTorch/JAX expertise, Distributed systems, GPU programming</p>
+                    <p><strong>Entry Points:</strong> MS in ML + projects, Open source contributions, Kaggle</p>
+                    <p><strong>Companies:</strong> OpenAI, Anthropic, Meta, Google, Mistral AI</p>
+                </div>
+
+                <!-- AI Engineering Track -->
+                <div class="career-card">
+                    <div class="career-header">
+                        <span class="career-title"><span class="material-symbols-rounded">engineering</span> AI
+                            Engineering Track (Layers 4-6)</span>
+                        <span class="career-badge"><span class="material-symbols-rounded">star</span> Most
+                            In-Demand</span>
+                    </div>
+                    <p><strong>Profile:</strong> Build AI-powered applications</p>
+                    <p><strong>Roles:</strong> AI Engineer, Applied ML Engineer, Full-Stack AI Developer</p>
+
+                    <h5>Skills Matrix:</h5>
+                    <div class="skill-matrix">
+                        <div class="skill-item">
+                            <span class="skill-name">Python programming</span>
+                            <span class="skill-rating">
+                                <span class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span>
+                            </span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Prompt engineering</span>
+                            <span class="skill-rating">
+                                <span class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span>
+                            </span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">LLM API usage</span>
+                            <span class="skill-rating">
+                                <span class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span>
+                            </span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">RAG implementation</span>
+                            <span class="skill-rating">
+                                <span class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star empty">★</span>
+                            </span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vector databases</span>
+                            <span class="skill-rating">
+                                <span class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star empty">★</span>
+                            </span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Agent frameworks</span>
+                            <span class="skill-rating">
+                                <span class="skill-star">★</span><span class="skill-star">★</span><span
+                                    class="skill-star">★</span><span class="skill-star empty">★</span><span
+                                    class="skill-star empty">★</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h5>Learn Path:</h5>
+                    <ol class="styled-list numbered">
+                        <li>Master Python + basics of ML</li>
+                        <li>Build simple LLM apps (chatbot)</li>
+                        <li>Learn RAG (LangChain tutorial)</li>
+                        <li>Build agent (tool-using chatbot)</li>
+                        <li>Deploy to production</li>
+                        <li>Contribute to open source</li>
+                        <li>Share projects on Twitter/GitHub</li>
+                    </ol>
+                    <p><strong>Timeline:</strong> 3-6 months of focused learning</p>
+                </div>
+
+                <!-- Operations Track -->
+                <div class="career-card">
+                    <div class="career-header">
+                        <span class="career-title"><span class="material-symbols-rounded">settings</span> Operations
+                            Track (Layer 6)</span>
+                    </div>
+                    <p><strong>Profile:</strong> Ensure AI systems run reliably at scale</p>
+                    <p><strong>Roles:</strong> MLOps Engineer, AI SRE, DevOps Engineer</p>
+                    <p><strong>Skills Needed:</strong> CI/CD pipelines, Monitoring, Kubernetes, Cost optimization</p>
+                    <p><strong>Entry Points:</strong> SRE/DevOps background, Learn ML-specific concerns</p>
+                </div>
+
+                <!-- Growth Track -->
+                <div class="career-card">
+                    <div class="career-header">
+                        <span class="career-title"><span class="material-symbols-rounded">campaign</span> Growth Track
+                            (Layer 7)</span>
+                    </div>
+                    <p><strong>Profile:</strong> Bring AI products to market, scale users</p>
+                    <p><strong>Roles:</strong> Growth Marketer, Developer Relations (DevRel), Partnership Manager</p>
+                    <p><strong>Skills Needed:</strong> Marketing, Community building, Public speaking, Business
+                        development</p>
+                    <p><strong>Entry Points:</strong> Marketing/sales background, Build audience, Launch own AI products
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Projects -->
+        <section class="content-section" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">6. Project Ideas by Layer</h2>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">science</span> Research Layer Projects</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h5>Novel Attention Mechanism</h5>
+                        <p>Implement alternative to standard attention, compare on small benchmark, write technical
+                            report</p>
+                    </div>
+                    <div class="project-item">
+                        <h5>Interpretability Study</h5>
+                        <p>Analyze specific behavior (e.g., how models detect negation), use activation patching,
+                            document
+                            findings</p>
+                    </div>
+                    <div class="project-item">
+                        <h5>Scaling Law Experiments</h5>
+                        <p>Train models at different scales, plot loss curves, validate/challenge existing laws</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">factory</span> Foundation Layer Projects</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h5>Train LLM from Scratch</h5>
+                        <p>Use GPT-2 architecture, train on WikiText or The Pile</p>
+                        <div class="project-tags">
+                            <span class="project-tag">NanoGPT</span>
+                            <span class="project-tag">LLM.c</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5>Fine-Tune for Domain</h5>
+                        <p>Take open model (LLaMA, Mistral), fine-tune on medical/legal/code data</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Axolotl</span>
+                            <span class="project-tag">TRL</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5>Model Compression</h5>
+                        <p>Quantize model to INT8, INT4, measure perplexity degradation and speed improvements</p>
+                        <div class="project-tags">
+                            <span class="project-tag">GPTQ</span>
+                            <span class="project-tag">llama.cpp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">construction</span> Builder Layer Projects</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h5>Advanced RAG System</h5>
+                        <p>Multi-stage retrieval (dense + sparse), reranking, streaming responses with citations</p>
+                        <div class="project-tags">
+                            <span class="project-tag">LangChain</span>
+                            <span class="project-tag">LlamaIndex</span>
+                            <span class="project-tag">Pinecone</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5>Autonomous Agent</h5>
+                        <p>Multi-step task executor with web search, calculator, code execution, self-correction loops
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">LangGraph</span>
+                            <span class="project-tag">CrewAI</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5>Memory-Enhanced Chatbot</h5>
+                        <p>Short-term + long-term memory, semantic retrieval of past conversations</p>
+                        <div class="project-tags">
+                            <span class="project-tag">MemGPT</span>
+                            <span class="project-tag">Mem0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">computer</span> Application Layer Projects</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h5>AI-Powered Note-Taking App</h5>
+                        <p>Auto-summarization, semantic search across notes, AI writing assistant</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">Pinecone</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5>Code Documentation Generator</h5>
+                        <p>Analyze codebases, generate docstrings, create README files</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">AST parsing</span>
+                            <span class="project-tag">LLM API</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5>AI Tutor Platform</h5>
+                        <p>Subject-specific tutoring, adaptive difficulty, progress tracking</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">LangChain</span>
+                            <span class="project-tag">Supabase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">settings</span> Operation Layer Projects</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h5>LLM Monitoring Dashboard</h5>
+                        <p>Track latency, cost, errors. Alert on anomalies. Cost attribution per user.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Prometheus</span>
+                            <span class="project-tag">Grafana</span>
+                            <span class="project-tag">LangSmith</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5>Cost Optimization System</h5>
+                        <p>Smart routing (cheap vs. expensive models), caching layer, usage analytics</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Redis</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Helicone</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Research Opportunities -->
+        <section class="content-section" id="research">
+            <div class="section-header">
+                <h2 class="section-title">7. Research Opportunities & Paper Ideas</h2>
+            </div>
+
+            <div class="content-block">
+                <h3>High-Impact Research Areas</h3>
+            </div>
+
+            <div class="bento-grid">
+                <a href="https://arxiv.org/abs/2312.00752" target="_blank" rel="noopener" class="toc-card">
+                    <h4>1. Efficient Architectures</h4>
+                    <p><strong>Problem:</strong> Transformers scale O(n²) with context length</p>
+                    <p><strong>Research Directions:</strong> Linear attention mechanisms, Hybrid models (Transformer +
+                        SSM)</p>
+                    <p><strong>Paper Ideas:</strong> "Efficient Long-Context Modeling", "Hybrid Architecture for
+                        Sub-Linear Scaling"</p>
+                </a>
+
+                <a href="https://transformer-circuits.pub/" target="_blank" rel="noopener" class="toc-card">
+                    <h4>2. Interpretability</h4>
+                    <p><strong>Problem:</strong> We don't understand how LLMs work internally</p>
+                    <p><strong>Research Directions:</strong> Mechanistic interpretability (circuits), Feature extraction
+                    </p>
+                    <p><strong>Paper Ideas:</strong> "Discovering [Specific Capability] Circuits", "Automating Feature
+                        Detection"</p>
+                </a>
+
+                <a href="https://www.anthropic.com/research" target="_blank" rel="noopener" class="toc-card">
+                    <h4>3. Alignment & Safety</h4>
+                    <p><strong>Problem:</strong> Making AI systems reliably safe and helpful</p>
+                    <p><strong>Research Directions:</strong> Scalable oversight, Constitutional AI, Detecting deception
+                    </p>
+                    <p><strong>Paper Ideas:</strong> "Scalable Oversight with [Method]", "Detecting Deceptive Behavior"
+                    </p>
+                </a>
+
+                <a href="https://arxiv.org/abs/2305.10601" target="_blank" rel="noopener" class="toc-card">
+                    <h4>4. Reasoning & Planning</h4>
+                    <p><strong>Problem:</strong> LLMs struggle with multi-step reasoning</p>
+                    <p><strong>Research Directions:</strong> Tree/graph-based reasoning, Self-correction, Verification
+                    </p>
+                    <p><strong>Paper Ideas:</strong> "Graph-Structured Reasoning", "Verifiable Reasoning Chains"</p>
+                </a>
+            </div>
+
+            <div class="content-block">
+                <h3>Writing Your First AI Paper</h3>
+                <ol class="styled-list numbered">
+                    <li><strong>Pick a Problem:</strong> Choose from above or find your own (must be specific and
+                        measurable)
+                    </li>
+                    <li><strong>Survey Literature:</strong> Read 20-30 related papers, identify gaps</li>
+                    <li><strong>Design Experiments:</strong> Define method, baselines, metrics</li>
+                    <li><strong>Implement & Run:</strong> Code, run on multiple datasets, collect results</li>
+                    <li><strong>Write Paper:</strong> Abstract, Intro, Related Work, Method, Experiments, Conclusion
+                    </li>
+                    <li><strong>Submit:</strong> Top conferences (NeurIPS, ICML, ICLR, ACL, CVPR) or arXiv preprint</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section 8: Learning Resources -->
+        <section class="content-section" id="resources">
+            <div class="section-header">
+                <h2 class="section-title">8. Learning Resources & Curriculum</h2>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">menu_book</span> Beginner Path (0-3 months)</h3>
+                <p><strong>Goal:</strong> Understand AI fundamentals, build first apps</p>
+
+                <h5>Week 1-2: Foundations</h5>
+                <ul class="styled-list">
+                    <li>Python programming (if needed)</li>
+                    <li>Basic ML concepts (Coursera: Andrew Ng's ML)</li>
+                    <li>How LLMs work (high-level)</li>
+                </ul>
+
+                <h5>Week 3-4: Getting Hands-On</h5>
+                <ul class="styled-list">
+                    <li>OpenAI API quickstart</li>
+                    <li>Build a chatbot (simple prompt → response)</li>
+                    <li>Try ChatGPT API, Claude API</li>
+                </ul>
+
+                <h5>Week 5-8: Core Techniques</h5>
+                <ul class="styled-list">
+                    <li>Prompt engineering (LearnPrompting.org)</li>
+                    <li>Introduction to RAG</li>
+                    <li>Build a document Q&A system</li>
+                </ul>
+
+                <h5>Week 9-12: First Real Project</h5>
+                <ul class="styled-list">
+                    <li>Choose project idea</li>
+                    <li>Build, deploy, share</li>
+                    <li>Get feedback, iterate</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">auto_stories</span> Intermediate Path (3-9 months)</h3>
+                <p><strong>Goal:</strong> Master AI engineering, build production apps</p>
+
+                <ul class="styled-list">
+                    <li>Advanced RAG (multi-query, reranking)</li>
+                    <li>Memory systems</li>
+                    <li>Agent frameworks (LangGraph)</li>
+                    <li>Production skills (FastAPI, Docker, Monitoring)</li>
+                    <li>Build 2-3 portfolio projects</li>
+                    <li>Contribute to open source</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">school</span> Advanced Path (9+ months)</h3>
+                <p><strong>Goal:</strong> Research-level understanding, novel contributions</p>
+
+                <ul class="styled-list">
+                    <li>Transformer architecture deep-dive</li>
+                    <li>Fine-tuning & RLHF</li>
+                    <li>Distributed training</li>
+                    <li>Research paper implementation</li>
+                    <li>Novel research directions</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">library_books</span> Curated Course List</h3>
+
+                <h5>General AI:</h5>
+                <ul class="resource-list">
+                    <li><strong>Andrew Ng's Machine Learning</strong> (Coursera) - Classic intro</li>
+                    <li><strong>Fast.ai Practical Deep Learning</strong> - Code-first approach</li>
+                    <li><strong>DeepLearning.AI Generative AI courses</strong> - Modern, LLM-focused</li>
+                </ul>
+
+                <h5>LLM-Specific:</h5>
+                <ul class="resource-list">
+                    <li><strong>LangChain for LLM Application Development</strong> (DeepLearning.AI)</li>
+                    <li><strong>Building Systems with ChatGPT API</strong> (DeepLearning.AI)</li>
+                    <li><strong>Advanced RAG</strong> (LlamaIndex course)</li>
+                </ul>
+
+                <h5>Research-Level:</h5>
+                <ul class="resource-list">
+                    <li><strong>Stanford CS224N</strong> - NLP with Deep Learning</li>
+                    <li><strong>Stanford CS229</strong> - Machine Learning</li>
+                    <li><strong>Hugging Face NLP Course</strong> - Free, comprehensive</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">import_contacts</span> Book Recommendations</h3>
+                <ul class="styled-list">
+                    <li><strong>For Beginners:</strong> "AI and Machine Learning for Coders" - Laurence Moroney</li>
+                    <li><strong>For Beginners:</strong> "Build a Large Language Model (From Scratch)" - Sebastian
+                        Raschka</li>
+                    <li><strong>For Engineers:</strong> "Designing Machine Learning Systems" - Chip Huyen</li>
+                    <li><strong>For Researchers:</strong> "Deep Learning" - Goodfellow, Bengio, Courville</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 9: Tools Directory -->
+        <section class="content-section" id="tools">
+            <div class="section-header">
+                <h2 class="section-title">9. Tools & Frameworks Directory</h2>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">science</span> Research Tools</h3>
+                <div class="tool-grid">
+                    <div class="tool-card"><span class="tool-name">PyTorch</span><span class="tool-desc">Deep learning
+                            framework</span></div>
+                    <div class="tool-card"><span class="tool-name">JAX</span><span class="tool-desc">Functional deep
+                            learning</span></div>
+                    <div class="tool-card"><span class="tool-name">Weights & Biases</span><span
+                            class="tool-desc">Experiment
+                            tracking</span></div>
+                    <div class="tool-card"><span class="tool-name">TensorBoard</span><span
+                            class="tool-desc">Visualization</span></div>
+                    <div class="tool-card"><span class="tool-name">Papers with Code</span><span class="tool-desc">Find
+                            implementations</span></div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">factory</span> Foundation Tools</h3>
+                <div class="tool-grid">
+                    <div class="tool-card"><span class="tool-name">HF Transformers</span><span
+                            class="tool-desc">Pre-trained
+                            models</span></div>
+                    <div class="tool-card"><span class="tool-name">DeepSpeed</span><span class="tool-desc">Efficient
+                            training</span></div>
+                    <div class="tool-card"><span class="tool-name">Megatron-LM</span><span class="tool-desc">Large-scale
+                            training</span></div>
+                    <div class="tool-card"><span class="tool-name">Axolotl</span><span class="tool-desc">Fine-tuning
+                            framework</span></div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">cloud</span> Platform Tools</h3>
+                <div class="tool-grid">
+                    <div class="tool-card"><span class="tool-name">vLLM</span><span class="tool-desc">Fast
+                            inference</span>
+                    </div>
+                    <div class="tool-card"><span class="tool-name">TGI</span><span class="tool-desc">HF serving</span>
+                    </div>
+                    <div class="tool-card"><span class="tool-name">Ollama</span><span class="tool-desc">Local model
+                            runtime</span></div>
+                    <div class="tool-card"><span class="tool-name">LM Studio</span><span class="tool-desc">Desktop LLM
+                            app</span></div>
+                    <div class="tool-card"><span class="tool-name">Replicate</span><span class="tool-desc">Model API
+                            hosting</span></div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">construction</span> Builder Tools</h3>
+                <div class="tool-grid">
+                    <div class="tool-card"><span class="tool-name">LangChain</span><span class="tool-desc">Application
+                            framework</span></div>
+                    <div class="tool-card"><span class="tool-name">LlamaIndex</span><span class="tool-desc">RAG
+                            framework</span>
+                    </div>
+                    <div class="tool-card"><span class="tool-name">LangGraph</span><span class="tool-desc">Agent
+                            workflows</span></div>
+                    <div class="tool-card"><span class="tool-name">CrewAI</span><span class="tool-desc">Multi-agent
+                            systems</span></div>
+                    <div class="tool-card"><span class="tool-name">DSPy</span><span class="tool-desc">Programming LM
+                            pipelines</span></div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">database</span> Vector Databases</h3>
+                <div class="tool-grid">
+                    <div class="tool-card"><span class="tool-name">Pinecone</span><span class="tool-desc">Managed vector
+                            DB</span></div>
+                    <div class="tool-card"><span class="tool-name">Weaviate</span><span class="tool-desc">Open
+                            source</span>
+                    </div>
+                    <div class="tool-card"><span class="tool-name">Qdrant</span><span
+                            class="tool-desc">Rust-based</span></div>
+                    <div class="tool-card"><span class="tool-name">Chroma</span><span class="tool-desc">Embedded
+                            DB</span></div>
+                    <div class="tool-card"><span class="tool-name">Milvus</span><span class="tool-desc">Scalable</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3><span class="material-symbols-rounded">settings</span> Operation Tools</h3>
+                <div class="tool-grid">
+                    <div class="tool-card"><span class="tool-name">LangSmith</span><span class="tool-desc">LLM
+                            monitoring</span>
+                    </div>
+                    <div class="tool-card"><span class="tool-name">Helicone</span><span
+                            class="tool-desc">Observability</span>
+                    </div>
+                    <div class="tool-card"><span class="tool-name">Prometheus</span><span
+                            class="tool-desc">Metrics</span></div>
+                    <div class="tool-card"><span class="tool-name">Grafana</span><span
+                            class="tool-desc">Dashboards</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: Industry Applications -->
+        <section class="content-section" id="applications">
+            <div class="section-header">
+                <h2 class="section-title">10. Industry Applications & Case Studies</h2>
+            </div>
+
+            <div class="content-block">
+                <h3>By Industry</h3>
+            </div>
+
+            <div class="content-block">
+                <h4><span class="material-symbols-rounded">local_hospital</span> Healthcare</h4>
+                <ul class="styled-list">
+                    <li><strong>Use Cases:</strong> Medical record summarization, Clinical decision support, Patient
+                        triage
+                        chatbots</li>
+                    <li><strong>Companies:</strong> Google Med-PaLM, Microsoft Healthcare GPT, Nabla</li>
+                    <li><strong>Challenges:</strong> HIPAA compliance, Liability concerns, Hallucination risks</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h4><span class="material-symbols-rounded">account_balance</span> Finance</h4>
+                <ul class="styled-list">
+                    <li><strong>Use Cases:</strong> Financial analysis, Fraud detection, Customer service, Regulatory
+                        compliance
+                    </li>
+                    <li><strong>Companies:</strong> Bloomberg GPT, Morningstar AI, Kensho (S&P Global)</li>
+                    <li><strong>Challenges:</strong> Accuracy requirements, Regulatory compliance, Data security</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h4><span class="material-symbols-rounded">gavel</span> Legal</h4>
+                <ul class="styled-list">
+                    <li><strong>Use Cases:</strong> Contract analysis, Legal research, Document drafting, E-discovery
+                    </li>
+                    <li><strong>Companies:</strong> Harvey AI, Casetext CoCounsel, Robin AI</li>
+                    <li><strong>Challenges:</strong> Hallucination cannot be tolerated, Bar association rules,
+                        Confidentiality
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h4><span class="material-symbols-rounded">code</span> Software Development</h4>
+                <ul class="styled-list">
+                    <li><strong>Use Cases:</strong> Code completion, Bug detection, Documentation generation, Code
+                        review</li>
+                    <li><strong>Companies:</strong> GitHub Copilot, Cursor, Tabnine, Replit Ghostwriter</li>
+                    <li><strong>Impact:</strong> 55% faster coding (GitHub study)</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Success Stories</h3>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <div class="case-study-logo"><span class="material-symbols-rounded">shopping_cart</span></div>
+                    <span class="case-study-name">Klarna (Shopping AI)</span>
+                </div>
+                <div class="case-study-metrics">
+                    <div class="case-metric">
+                        <span class="case-metric-value">2.3M</span>
+                        <span class="case-metric-label">Conversations/month</span>
+                    </div>
+                    <div class="case-metric">
+                        <span class="case-metric-value">700</span>
+                        <span class="case-metric-label">Agents equivalent</span>
+                    </div>
+                    <div class="case-metric">
+                        <span class="case-metric-value">25%</span>
+                        <span class="case-metric-label">Fewer repeat inquiries</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <div class="case-study-logo"><span class="material-symbols-rounded">smart_toy</span></div>
+                    <span class="case-study-name">Duolingo Max</span>
+                </div>
+                <div class="case-study-metrics">
+                    <div class="case-metric">
+                        <span class="case-metric-value">10%</span>
+                        <span class="case-metric-label">Conversion to paid</span>
+                    </div>
+                    <div class="case-metric">
+                        <span class="case-metric-value">AI</span>
+                        <span class="case-metric-label">Explanations & Roleplay</span>
+                    </div>
+                    <div class="case-metric">
+                        <span class="case-metric-value">↑</span>
+                        <span class="case-metric-label">Learning outcomes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <div class="case-study-logo"><span class="material-symbols-rounded">analytics</span></div>
+                    <span class="case-study-name">Morgan Stanley</span>
+                </div>
+                <div class="case-study-metrics">
+                    <div class="case-metric">
+                        <span class="case-metric-value">100K</span>
+                        <span class="case-metric-label">Documents searchable</span>
+                    </div>
+                    <div class="case-metric">
+                        <span class="case-metric-value">Hours</span>
+                        <span class="case-metric-label">Saved per advisor</span>
+                    </div>
+                    <div class="case-metric">
+                        <span class="case-metric-value">Faster</span>
+                        <span class="case-metric-label">Client service</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="conclusion-section">
+            <h2><span class="material-symbols-rounded">target</span> Conclusion</h2>
+            <p>This framework provides a complete map of the GenAI landscape. Every concept, tool, company, and role
+                fits into
+                one of these eight layers.</p>
+
+            <div class="content-block">
+                <h3>Key Takeaways</h3>
+                <div class="takeaways-list">
+                    <ol class="styled-list numbered">
+                        <li><strong>AI Engineering (Layers 4-6)</strong> is the highest-demand skillset</li>
+                        <li><strong>Not all AI work is research</strong> — most value is in application</li>
+                        <li><strong>The feedback loop</strong> drives innovation from users back to research</li>
+                        <li><strong>Cross-cutting dimensions</strong> (Infrastructure, Data, Tools, People) enable all
+                            layers
+                        </li>
+                        <li><strong>Pick your layer</strong> based on interests and skills</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Next Steps</h3>
+            <div class="next-steps-grid">
+                <div class="next-step-item">
+                    <span class="next-step-number">1</span>
+                    <span class="next-step-text">Audit your skills: Which layers do you understand?</span>
+                </div>
+                <div class="next-step-item">
+                    <span class="next-step-number">2</span>
+                    <span class="next-step-text">Identify gaps: What do you need to learn?</span>
+                </div>
+                <div class="next-step-item">
+                    <span class="next-step-number">3</span>
+                    <span class="next-step-text">Build projects: Hands-on experience beats theory</span>
+                </div>
+                <div class="next-step-item">
+                    <span class="next-step-number">4</span>
+                    <span class="next-step-text">Share your work: Blog, GitHub, Twitter</span>
+                </div>
+                <div class="next-step-item">
+                    <span class="next-step-number">5</span>
+                    <span class="next-step-text">Contribute: Open source, community, research</span>
+                </div>
+            </div>
+
+            <div class="content-block" style="margin-top: 2rem;">
+                <h3>Test the Framework</h3>
+                <ul class="styled-list">
+                    <li>Take any GenAI buzzword</li>
+                    <li>Try to place it in the map</li>
+                    <li>Does it fit? (It should!)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">
+                <strong>Bookmark this guide.</strong> The GenAI landscape will evolve, but this structure remains.
+            </p>
+            <p class="footer-text" style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7;">
+                <span class="material-symbols-rounded">psychology</span> The Complete GenAI Roadmap | An Exhaustive
+                Reference Guide
+            </p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
