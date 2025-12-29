@@ -583,33 +583,9 @@ h3 {
         transform: translateX(-100%);
     }
 
-    .sidebar.active,
     .sidebar.open {
         transform: translateX(0);
         box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Keep toggle button visible and larger on mobile */
-    .sidebar-toggle {
-        display: flex !important;
-        opacity: 1 !important;
-        pointer-events: auto !important;
-        width: 48px;
-        height: 48px;
-        background: var(--bg-card) !important;
-        border: 1px solid var(--border-frame) !important;
-        z-index: 200;
-    }
-
-    .sidebar-toggle .material-symbols-rounded {
-        font-size: 28px;
-    }
-
-    /* Don't hide toggle on mobile when sidebar is open */
-    .sidebar-toggle.button-hidden {
-        opacity: 1 !important;
-        pointer-events: auto !important;
-        transform: none !important;
     }
 
     .main-content {
@@ -666,22 +642,26 @@ h3 {
 /* Ghost Icon Button Style */
 .sidebar-toggle {
     position: fixed;
-    top: 16px;
-    left: 16px;
-    z-index: 9999;
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
+    top: 24px;
+    left: 24px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 
-    background: #1E1E22 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    color: #FFFFFF !important;
+    background: transparent;
+    /* No background by default */
+    border: none;
+    /* No border */
+    box-shadow: none;
+    /* No shadow */
+    color: var(--text-secondary);
+    /* Subtler color */
 
     transition: all 0.2s ease;
 }
@@ -858,207 +838,4 @@ h3 {
     font-size: 0.95rem;
     color: var(--text-secondary);
     font-style: italic;
-}
-
-/* =====================================================
-   MOBILE-FIRST RESPONSIVE ENHANCEMENTS
-   ===================================================== */
-
-@media (max-width: 768px) {
-
-    /* Typography Scaling */
-    h1,
-    .page-title {
-        font-size: 1.5rem !important;
-    }
-
-    h2,
-    .section-title {
-        font-size: 1.25rem !important;
-        margin: 32px 0 16px 0;
-    }
-
-    h3 {
-        font-size: 1.1rem !important;
-    }
-
-    h4 {
-        font-size: 1rem !important;
-    }
-
-    /* Page Title Header */
-    .page-title-header {
-        margin-bottom: 24px;
-        padding-bottom: 16px;
-    }
-
-    .page-title {
-        gap: 10px;
-    }
-
-    .page-title .logo-icon {
-        font-size: 1.8rem;
-    }
-
-    /* Cards - Full Width, Compact */
-    .toc-card,
-    .info-card,
-    .career-card,
-    .project-item,
-    .tool-card {
-        padding: 16px !important;
-    }
-
-    .toc-card strong,
-    .toc-card h4,
-    .toc-card h6 {
-        font-size: 0.95rem;
-    }
-
-    .toc-card p {
-        font-size: 0.85rem;
-        margin-top: 6px;
-    }
-
-    /* Layer Headers - Compact */
-    .layer-header {
-        padding: 16px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .layer-icon {
-        font-size: 1.5rem !important;
-    }
-
-    .layer-info h3 {
-        font-size: 1.1rem;
-    }
-
-    .layer-tagline {
-        font-size: 0.8rem;
-    }
-
-    /* Tables - Scrollable */
-    .dimension-table {
-        display: block;
-        overflow-x: auto;
-        font-size: 0.8rem;
-    }
-
-    .dimension-table th,
-    .dimension-table td {
-        padding: 8px 12px;
-        min-width: 120px;
-    }
-
-    /* Subsection Headers */
-    .subsection h4 {
-        font-size: 1rem;
-        padding: 12px 0;
-    }
-
-    /* Definition Box */
-    .definition-box {
-        padding: 16px;
-    }
-
-    /* Smaller gaps */
-    .bento-grid,
-    .toc-grid {
-        gap: 12px;
-    }
-
-    /* Layer Summary */
-    .layer-summary {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .summary-box {
-        padding: 16px;
-    }
-
-    /* Code blocks */
-    .toc-card pre,
-    .info-card pre {
-        font-size: 0.7rem;
-        padding: 10px;
-        max-height: 100px;
-    }
-
-    /* Career Cards */
-    .career-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .career-title {
-        font-size: 1rem;
-    }
-
-    /* Skill Matrix */
-    .skill-matrix {
-        gap: 8px;
-    }
-
-    .skill-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-    }
-
-    /* Case Studies */
-    .case-study-card {
-        padding: 16px;
-    }
-
-    .case-study-metrics {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    /* Material Icons in Headings */
-    h3 .material-symbols-rounded,
-    h4 .material-symbols-rounded {
-        font-size: 1.2rem;
-        vertical-align: middle;
-    }
-
-    /* Conclusion Section */
-    .conclusion-section {
-        padding: 32px 16px;
-    }
-
-    /* Footer */
-    footer {
-        padding: 24px 16px;
-    }
-}
-
-/* Very Small Screens (< 480px) */
-@media (max-width: 480px) {
-    .main-content {
-        padding: 70px 12px 24px 12px;
-    }
-
-    h1,
-    .page-title {
-        font-size: 1.3rem !important;
-    }
-
-    .toc-card,
-    .info-card {
-        padding: 12px !important;
-    }
-
-    .layer-header {
-        padding: 12px;
-    }
-
-    .dimension-table {
-        font-size: 0.75rem;
-    }
 }
